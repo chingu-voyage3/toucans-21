@@ -6,3 +6,13 @@ html {
   *:after {
     box-sizing: inherit;
   }
+  
+  .container {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    margin: 0 20%;
+    display: flex;
+    justify-content: center;
+    border: 1px dotted red;
+  }
