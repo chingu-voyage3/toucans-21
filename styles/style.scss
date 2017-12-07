@@ -39,7 +39,22 @@ html {
 
       .title, .subtitle {
         display: flex; flex: 1;
-        border: 1px dotted white;
+        color: #fff;
+      }
+
+      .title {
+        align-items: flex-end;
+        font: {
+          size: 24px;
+          weight: 500;
+        }
+      }
+
+      .subtitle {
+        font: {
+          size: 14px;
+          weight: 300;
+        }
       }
     }
 
