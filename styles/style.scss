@@ -74,8 +74,25 @@ html {
       .row1 {
         .item {
           display: flex;flex: 1;
+          flex-direction: column;
           border: 1px dotted white;
-          padding: 20px;
+          padding: 20px 15px;
+
+          .image, .text {
+            display: flex; flex: 1;
+            border: 1px dashed red;
+          }
+
+          .image {
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+          }
+
+          .text {
+
+          }
         }
       }
     }
