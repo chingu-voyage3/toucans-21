@@ -64,6 +64,20 @@ html {
     .services-container {
       border: 1px solid;
       display: flex; flex: 3;
+      flex-direction: column;
+
+      .row1, .row2 {
+        display: flex; flex: 1;
+        border: 1px dotted;
+      }
+
+      .row1 {
+        .item {
+          display: flex;flex: 1;
+          border: 1px dotted white;
+          padding: 20px;
+        }
+      }
     }
   }
 
