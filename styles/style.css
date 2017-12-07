@@ -114,7 +114,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px dotted white;
   padding: 20px 15px;
 }
 .services .services-container .row1 .item .image, .services .services-container .row1 .item .text {
@@ -124,11 +123,42 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border: 1px dashed red;
+}
+.services .services-container .row1 .item .image {
+  padding-bottom: 30px;
 }
 .services .services-container .row1 .item .image img {
   max-width: 100%;
   height: auto;
+}
+.services .services-container .row1 .item .text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+.services .services-container .row1 .item .text .title, .services .services-container .row1 .item .text .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+.services .services-container .row1 .item .text .title {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.services .services-container .row1 .item .text .description {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
