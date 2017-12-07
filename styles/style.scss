@@ -25,14 +25,12 @@ html {
     position: absolute;
     width: 100%;
     height: 977px;
-    border: 1px dashed black; 
-    background: linear-gradient(45deg, #E66586 0, #F09459 100%);
+    background: linear-gradient(90deg, #E66586 0, #F09459 100%);
     display: flex;
     flex-direction: column;
 
     //TITLE CONTAINER
     .title-container {
-      border: 1px solid;
       display: flex; flex: 1;
       flex-direction: column;
       align-items: center;
@@ -62,16 +60,15 @@ html {
 
 
     .services-container {
-      border: 1px solid;
-      display: flex; flex: 3;
+      display: flex; flex: 4;
       flex-direction: column;
+      padding-bottom: 80px;
 
       .row1, .row2 {
         display: flex; flex: 1;
-        border: 1px dotted;
       }
 
-      .row1 {
+      .row1, .row2 {
         .item {
           display: flex;flex: 1;
           flex-direction: column;

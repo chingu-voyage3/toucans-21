@@ -32,8 +32,8 @@ body {
   position: absolute;
   width: 100%;
   height: 977px;
-  border: 1px dashed black;
-  background: linear-gradient(45deg, #E66586 0, #F09459 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #E66586), to(#F09459));
+  background: linear-gradient(90deg, #E66586 0, #F09459 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +43,6 @@ body {
           flex-direction: column;
 }
 .services .title-container {
-  border: 1px solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,17 +81,17 @@ body {
   font-weight: 300;
 }
 .services .services-container {
-  border: 1px solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 80px;
 }
 .services .services-container .row1, .services .services-container .row2 {
   display: -webkit-box;
@@ -101,9 +100,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border: 1px dotted;
 }
-.services .services-container .row1 .item {
+.services .services-container .row1 .item, .services .services-container .row2 .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,7 +114,7 @@ body {
           flex-direction: column;
   padding: 20px 15px;
 }
-.services .services-container .row1 .item .image, .services .services-container .row1 .item .text {
+.services .services-container .row1 .item .image, .services .services-container .row1 .item .text, .services .services-container .row2 .item .image, .services .services-container .row2 .item .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,21 +122,21 @@ body {
       -ms-flex: 1;
           flex: 1;
 }
-.services .services-container .row1 .item .image {
+.services .services-container .row1 .item .image, .services .services-container .row2 .item .image {
   padding-bottom: 30px;
 }
-.services .services-container .row1 .item .image img {
+.services .services-container .row1 .item .image img, .services .services-container .row2 .item .image img {
   max-width: 100%;
   height: auto;
 }
-.services .services-container .row1 .item .text {
+.services .services-container .row1 .item .text, .services .services-container .row2 .item .text {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   color: #fff;
 }
-.services .services-container .row1 .item .text .title, .services .services-container .row1 .item .text .description {
+.services .services-container .row1 .item .text .title, .services .services-container .row1 .item .text .description, .services .services-container .row2 .item .text .title, .services .services-container .row2 .item .text .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,11 +148,11 @@ body {
           align-items: center;
   font-size: 14px;
 }
-.services .services-container .row1 .item .text .title {
+.services .services-container .row1 .item .text .title, .services .services-container .row2 .item .text .title {
   font-weight: 500;
   text-transform: uppercase;
 }
-.services .services-container .row1 .item .text .description {
+.services .services-container .row1 .item .text .description, .services .services-container .row2 .item .text .description {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
