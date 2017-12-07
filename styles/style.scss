@@ -30,6 +30,7 @@ html {
     display: flex;
     flex-direction: column;
 
+    //TITLE CONTAINER
     .title-container {
       border: 1px solid;
       display: flex; flex: 1;
@@ -37,6 +38,7 @@ html {
       align-items: center;
       justify-content: center;
 
+      //TEXT STYLES
       .title, .subtitle {
         display: flex; flex: 1;
         color: #fff;
@@ -57,6 +59,7 @@ html {
         }
       }
     }
+
 
     .services-container {
       border: 1px solid;
