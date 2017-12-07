@@ -24,4 +24,11 @@ html {
   border: 1px dotted red;
 }
 
+.services {
+  position: absolute;
+  width: 100%;
+  height: 977px;
+  border: 1px dashed black;
+}
+
 /*# sourceMappingURL=style.css.map */
