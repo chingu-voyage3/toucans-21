@@ -30,7 +30,7 @@ html {
     flex-direction: column;
 
     //TITLE CONTAINER
-    .title-container {
+    .title-container { 
       display: flex; flex: 1;
       flex-direction: column;
       align-items: center;
@@ -77,11 +77,35 @@ html {
           .image, .text {display: flex; flex: 1;}
 
           .image {
+            background: #fff;
+            position: relative;
+            
+
             img {
               max-width: 100%;
               height: auto;
+              transition: all .5s ease;
+
+              &:hover {opacity: .5; cursor: pointer;}
             }
-            padding-bottom: 30px;
+
+            .button {
+              position: absolute;
+              width: 100px; height: 30px;
+              background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+              border-radius: 50px;
+              align-self: center;
+              left: 30%;
+              display: flex;
+              align-items: center; justify-content: center;
+              color: #fff; 
+              font-size: 12px;
+              font-weight: 300;
+              display: none;
+              transition: all .5s ease;
+
+              i { color: #fff; font-size: 12px; margin-left: 2px;}
+            }
           }
 
           .text {
@@ -109,4 +133,5 @@ html {
     }
   }
 
+  .showBtn { display: block;}
   //************************** DIANA SERVICES SECTION END **************************
