@@ -79,15 +79,52 @@ html {
           .image {
             background: #fff;
             position: relative;
-            
+            &:hover {
+              cursor: pointer;
+
+              .overlay {
+                background-color: rgba(255,255,255,.7);
+
+                button { 
+                  opacity: 1;
+                }
+              }
+            }
 
             img {
               max-width: 100%;
               height: auto;
               transition: all .5s ease;
-
-              &:hover {opacity: .5; cursor: pointer;}
             }
+
+            .overlay {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 100%;
+              width: 100%;
+              transition: all .5s ease;
+              background-color: rgba(255,255,255,0);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              button {
+                opacity: 0;
+                background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+                border: none;
+                padding: 10px 20px;
+                border-radius: 20px;
+                color: #fff;
+                font-size: 15px;
+                transition: all .5s ease;
+
+                &:hover {cursor: pointer;}
+              }
+            }
+
 
             .button {
               position: absolute;
