@@ -60,17 +60,15 @@ body {
           background: #fff;
           position: relative;
           display: flex;
-          height: 100px; }
+          height: 150px;
+          background-size: cover !important;
+          background-position: center !important; }
           .services .services-container .row1 .item .image:hover {
             cursor: pointer; }
             .services .services-container .row1 .item .image:hover .overlay {
               background-color: rgba(255, 255, 255, 0.7); }
               .services .services-container .row1 .item .image:hover .overlay button {
                 opacity: 1; }
-          .services .services-container .row1 .item .image img {
-            max-width: 100%;
-            height: auto;
-            transition: all .5s ease; }
           .services .services-container .row1 .item .image .overlay {
             position: absolute;
             top: 0;
@@ -119,7 +117,8 @@ body {
           flex-direction: column;
           color: #fff;
           display: flex;
-          flex: 1; }
+          flex: 1;
+          padding-top: 10px; }
           .services .services-container .row1 .item .text .title, .services .services-container .row1 .item .text .description {
             display: flex;
             flex: 1;
@@ -131,30 +130,22 @@ body {
           .services .services-container .row1 .item .text .description {
             flex: 3;
             font-weight: 300; }
-    .services .services-container .item1 .image {
-      background: url("../images/r1i1.jpg");
-      background-size: cover; }
-    .services .services-container .item2 .image {
-      background: url("../images/r1i2.jpg");
-      background-size: cover; }
-    .services .services-container .item3 .image {
-      background: url("../images/r1i3.jpg");
-      background-size: cover; }
-    .services .services-container .item4 .image {
-      background: url("../images/r1i4.jpg");
-      background-size: cover; }
-    .services .services-container .item5 .image {
-      background: url("../images/r2i1.jpg");
-      background-size: cover; }
-    .services .services-container .item6 .image {
-      background: url("../images/r2i2.jpg");
-      background-size: cover; }
-    .services .services-container .item7 .image {
-      background: url("../images/r2i3.jpg");
-      background-size: cover; }
-    .services .services-container .item8 .image {
-      background: url("../images/r2i4.jpg");
-      background-size: cover; }
+      .services .services-container .row1 .item1 .image {
+        background: url("../images/r1i1.jpg"); }
+      .services .services-container .row1 .item2 .image {
+        background: url("../images/r1i2.jpg"); }
+      .services .services-container .row1 .item3 .image {
+        background: url("../images/r1i3.jpg"); }
+      .services .services-container .row1 .item4 .image {
+        background: url("../images/r1i4.jpg"); }
+      .services .services-container .row1 .item5 .image {
+        background: url("../images/r2i1.jpg"); }
+      .services .services-container .row1 .item6 .image {
+        background: url("../images/r2i2.jpg"); }
+      .services .services-container .row1 .item7 .image {
+        background: url("../images/r2i3.jpg"); }
+      .services .services-container .row1 .item8 .image {
+        background: url("../images/r2i4.jpg"); }
 
 .showBtn {
   display: block; }

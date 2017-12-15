@@ -81,7 +81,9 @@ html {
             background: #fff;
             position: relative;
             display: flex;
-            height: 100px;
+            height: 150px;
+            background-size: cover!important;
+            background-position: center!important;
 
             &:hover {
               cursor: pointer;
@@ -93,12 +95,6 @@ html {
                   opacity: 1;
                 }
               }
-            }
-
-            img {
-              max-width: 100%;
-              height: auto;
-              transition: all .5s ease;
             }
 
             .overlay {
@@ -154,6 +150,7 @@ html {
             color: #fff;
             display: flex;
             flex: 1;
+            padding-top: 10px;
 
             .title, .description {
               display: flex; flex: 1;
@@ -173,52 +170,20 @@ html {
             }
           }
         }
+
+
+        //row1
+        .item1 .image {background: url('../images/r1i1.jpg');}
+        .item2 .image {background: url('../images/r1i2.jpg');}
+        .item3 .image {background: url('../images/r1i3.jpg');}
+        .item4 .image {background: url('../images/r1i4.jpg');}
+        //row2
+        .item5 .image{background: url('../images/r2i1.jpg');}
+        .item6 .image {background: url('../images/r2i2.jpg');}
+        .item7 .image {background: url('../images/r2i3.jpg');}
+        .item8 .image {background: url('../images/r2i4.jpg');}
+
       }
-
-
-      .item1 .image {
-        background: url('../images/r1i1.jpg');
-        background-size: cover;
-      }
-
-      .item2 .image {
-          background: url('../images/r1i2.jpg');
-          background-size: cover;
-      }
-
-      .item3 .image {
-        background: url('../images/r1i3.jpg');
-        background-size: cover;
-      }
-
-      .item4 .image {
-        background: url('../images/r1i4.jpg');
-        background-size: cover;
-      }
-
-
-
-
-      .item5 .image {
-        background: url('../images/r2i1.jpg');
-        background-size: cover;
-      }
-
-      .item6 .image {
-          background: url('../images/r2i2.jpg');
-          background-size: cover;
-      }
-
-      .item7 .image {
-        background: url('../images/r2i3.jpg');
-        background-size: cover;
-      }
-
-      .item8 .image {
-        background: url('../images/r2i4.jpg');
-        background-size: cover;
-      }
-
     }
   }
 
