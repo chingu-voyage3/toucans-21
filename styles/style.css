@@ -16,15 +16,15 @@ body {
   margin: 0 15%;
   display: flex;
   justify-content: center;
-  border: 1px dotted red; }
+  align-items: center; }
 
 .services {
-  position: absolute;
   width: 100%;
   height: auto;
   background: linear-gradient(90deg, #E66586 0, #F09459 100%);
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 10% 3%; }
   .services .title-container {
     display: flex;
     flex: 1;
@@ -37,6 +37,7 @@ body {
       color: #fff; }
     .services .title-container .title {
       align-items: flex-end;
+      text-align: center;
       font-size: 24px;
       font-weight: 500; }
     .services .title-container .subtitle {
@@ -46,7 +47,7 @@ body {
     display: flex;
     flex: 4;
     flex-direction: column;
-    padding-bottom: 80px; }
+    padding-top: 5%; }
     .services .services-container .row1 {
       display: flex;
       flex-wrap: wrap; }
@@ -59,8 +60,7 @@ body {
           background: #fff;
           position: relative;
           display: flex;
-          height: 100px;
-          border: 1px solid red; }
+          height: 100px; }
           .services .services-container .row1 .item .image:hover {
             cursor: pointer; }
             .services .services-container .row1 .item .image:hover .overlay {
@@ -118,7 +118,6 @@ body {
         .services .services-container .row1 .item .text {
           flex-direction: column;
           color: #fff;
-          border: 1px dashed blue;
           display: flex;
           flex: 1; }
           .services .services-container .row1 .item .text .title, .services .services-container .row1 .item .text .description {

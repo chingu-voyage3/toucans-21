@@ -17,17 +17,17 @@ html {
     margin: 0 15%;
     display: flex;
     justify-content: center;
-    border: 1px dotted red;
+    align-items: center;
   }
 
   //************************** DIANA SERVICES SECTION START **************************
   .services {
-    position: absolute;
     width: 100%;
     height: auto;
     background: linear-gradient(90deg, #E66586 0, #F09459 100%);
     display: flex;
     flex-direction: column;
+    padding: 10% 3%;
 
     //TITLE CONTAINER
     .title-container { 
@@ -44,6 +44,7 @@ html {
 
       .title {
         align-items: flex-end;
+        text-align: center;
         font: {
           size: 24px;
           weight: 500;
@@ -62,7 +63,7 @@ html {
     .services-container {
       display: flex; flex: 4;
       flex-direction: column;
-      padding-bottom: 80px;
+      padding-top: 5%;
 
       .row1 {
         display: flex;
@@ -81,7 +82,6 @@ html {
             position: relative;
             display: flex;
             height: 100px;
-            border: 1px solid red;
 
             &:hover {
               cursor: pointer;
@@ -152,7 +152,6 @@ html {
           .text {
             flex-direction: column;
             color: #fff;
-            border: 1px dashed blue;
             display: flex;
             flex: 1;
 
@@ -165,6 +164,7 @@ html {
             .title {
               font-weight: 500;
               text-transform: uppercase;
+              
             }
 
             .description {
