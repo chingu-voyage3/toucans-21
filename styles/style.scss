@@ -24,7 +24,7 @@ html {
   .services {
     position: absolute;
     width: 100%;
-    height: 977px;
+    height: auto;
     background: linear-gradient(90deg, #E66586 0, #F09459 100%);
     display: flex;
     flex-direction: column;
@@ -64,21 +64,24 @@ html {
       flex-direction: column;
       padding-bottom: 80px;
 
-      .row1, .row2 {
-        display: flex; flex: 1;
-      }
+      .row1 {
+        display: flex;
+        flex-wrap: wrap;
 
-      .row1, .row2 {
         .item {
-          display: flex;flex: 1;
+          display: flex;
+          flex: 1;
           flex-direction: column;
           padding: 20px 15px;
-
-          .image, .text {display: flex; flex: 1;}
+          min-width: 150px;
 
           .image {
             background: #fff;
             position: relative;
+            display: flex;
+            height: 100px;
+            border: 1px solid red;
+
             &:hover {
               cursor: pointer;
 
@@ -148,6 +151,9 @@ html {
           .text {
             flex-direction: column;
             color: #fff;
+            border: 1px dashed blue;
+            display: flex;
+            flex: 1;
 
             .title, .description {
               display: flex; flex: 1;
@@ -167,8 +173,80 @@ html {
           }
         }
       }
+
+
+      .item1 .image {
+        background: url('../images/r1i1.jpg');
+        background-size: cover;
+      }
+
+      .item2 .image {
+          background: url('../images/r1i2.jpg');
+          background-size: cover;
+      }
+
+      .item3 .image {
+        background: url('../images/r1i3.jpg');
+        background-size: cover;
+      }
+
+      .item4 .image {
+        background: url('../images/r1i4.jpg');
+        background-size: cover;
+      }
+
+
+
+
+      .item5 .image {
+        background: url('../images/r2i1.jpg');
+        background-size: cover;
+      }
+
+      .item6 .image {
+          background: url('../images/r2i2.jpg');
+          background-size: cover;
+      }
+
+      .item7 .image {
+        background: url('../images/r2i3.jpg');
+        background-size: cover;
+      }
+
+      .item8 .image {
+        background: url('../images/r2i4.jpg');
+        background-size: cover;
+      }
+
     }
   }
 
   .showBtn { display: block;}
+
+
+  /*responsive*/
+
+  @media screen and (min-width: 662px) and (max-width: 704px){
+    .services-container {
+      .row1 {
+        .item {min-width: 160px!important;}
+      }
+    }
+  }
+  @media screen and (min-width: 705px) and (max-width: 942px){
+    .services-container {
+      .row1 {
+        .item { min-width: 30%!important;}
+      }
+    }
+  }
+
+
+  @media screen and (min-width: 943px){
+    .services-container {
+      .row1 {
+        .item { min-width: 25%!important;}
+      }
+    }
+  }
   //************************** DIANA SERVICES SECTION END **************************
