@@ -255,22 +255,24 @@ html {
     height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
   }
   
   #image-carousel .handle .img1 {
-    background-image: url('../images/aston-martin-db4.jpg');
+    background-image: url('../images/slide-img.jpg');
+
   }
   
   #image-carousel .handle .img2 {
-    background-image: url('../images/mercedes-benz-300sl.jpg');
+    background-image: url('../images/toucan-img.jpg');
   }
   
   #image-carousel .handle .img3 {
-    background-image: url('../images/jaguar-e-type.jpg');
+    background-image: url('../images/slide-img.jpg');
   }
   
   #image-carousel .handle .img4 {
-    background-image: url('../images/maserati-a6.jpg');
+    background-image: url('../images/toucan-img.jpg');
   }
   
   
