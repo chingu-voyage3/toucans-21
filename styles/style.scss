@@ -20,7 +20,7 @@ html {
     align-items: center;
   }
 
-  //************************** DIANA SERVICES SECTION START **************************
+//************************** DIANA SERVICES SECTION START **************************//
   .services {
     width: 100%;
     height: auto;
@@ -69,13 +69,11 @@ html {
         display: flex;
         flex-wrap: wrap;
 
-
         .item {
           display: flex;
           flex: 1;
           flex-direction: column;
           padding: 20px 15px;
-         
 
           .image {
             background: #fff;
@@ -90,10 +88,7 @@ html {
 
               .overlay {
                 background-color: rgba(255,255,255,.7);
-
-                button { 
-                  opacity: 1;
-                }
+                button {opacity: 1;}
               }
             }
 
@@ -161,7 +156,6 @@ html {
             .title {
               font-weight: 500;
               text-transform: uppercase;
-              
             }
 
             .description {
@@ -189,7 +183,6 @@ html {
 
   .showBtn { display: block;}
 
-
   /*responsive*/
   @media screen and (min-width: 320px) and (max-width: 425px){
     .services-container {
@@ -215,8 +208,6 @@ html {
       }
     }
   }
-
-
   @media screen and (min-width: 943px){
     .services-container {
       .row1 {
@@ -224,4 +215,4 @@ html {
       }
     }
   }
-  //************************** DIANA SERVICES SECTION END **************************
+//************************** DIANA SERVICES SECTION END **************************//
