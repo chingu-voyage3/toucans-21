@@ -276,8 +276,9 @@ body {
 }
 .divider {
   width: 100%;
-  height: 50px;
-  margin: 10px 0;
+  height: 20px;
+}
+.divider .container {
   background: #fff;
 }
 
