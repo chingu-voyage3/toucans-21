@@ -167,16 +167,16 @@ html {
         }
 
 
-        //row1
-        .item1 .image {background: url('../images/r1i1.jpg');}
-        .item2 .image {background: url('../images/r1i2.jpg');}
-        .item3 .image {background: url('../images/r1i3.jpg');}
-        .item4 .image {background: url('../images/r1i4.jpg');}
-        //row2
-        .item5 .image{background: url('../images/r2i1.jpg');}
-        .item6 .image {background: url('../images/r2i2.jpg');}
-        .item7 .image {background: url('../images/r2i3.jpg');}
-        .item8 .image {background: url('../images/r2i4.jpg');}
+        // //row1
+        // .item1 .image {background: url('../images/r1i1.jpg');}
+        // .item2 .image {background: url('../images/r1i2.jpg');}
+        // .item3 .image {background: url('../images/r1i3.jpg');}
+        // .item4 .image {background: url('../images/r1i4.jpg');}
+        // //row2
+        // .item5 .image{background: url('../images/r2i1.jpg');}
+        // .item6 .image {background: url('../images/r2i2.jpg');}
+        // .item7 .image {background: url('../images/r2i3.jpg');}
+        // .item8 .image {background: url('../images/r2i4.jpg');}
 
       }
     }
@@ -217,3 +217,188 @@ html {
     }
   }
 //************************** DIANA SERVICES SECTION END **************************
+
+
+.divider {
+  width: 100%; 
+  height: 50px;
+  margin: 10px 0;
+  background: #fff;
+}
+
+//************************** DIANA UNTOLD STORY SECTION START **************************
+
+.untold-container {
+
+  .container {
+    display: flex;
+    position: relative;
+
+    .untold-left, .untold-right {
+      display: flex; flex: 1;
+      height: 500px;
+    }
+
+    .untold-left {
+      background: linear-gradient(90deg, #E66587 0, #EB7D70 100%);
+
+      //TITLE CONTAINER
+    .title-container { 
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-left: 10px;
+
+      //TEXT STYLES
+      .title, .subtitle {
+        display: flex; flex: 1;
+        color: #fff;
+      }
+
+      .title {
+        align-items: flex-end;
+        text-align: center;
+        font: {
+          size: 24px;
+          weight: 500;
+        }
+      }
+
+      .subtitle {
+        font: {
+          size: 14px;
+          weight: 300;
+        }
+      }
+    }
+
+
+    }
+
+    .untold-right {
+      background: url('../images/story-bg.jpg');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .untold-middle {
+      width: 500px; height: 300px;
+      background: #fff;
+      position: absolute;
+      top: 23%;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .text-container {
+        width: 60%; height: 70%;
+        display: flex;
+        flex-direction: column;
+        .title, .button {display: flex; flex: 1;}
+        .title {
+          font: {
+            size: 14px; 
+            weight: 500;
+          }
+        }
+        .description {
+          display: flex;
+          flex: 3;
+          color: #777;
+          font: {
+            size: 14px;
+            weight: 300;
+          }
+        }
+
+        button {
+          background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+          border: none;
+          padding: 8px 25px;
+          border-radius: 20px;
+          color: #fff;
+          font-size: 14px;
+          transition: all .5s ease;
+
+          &:hover {cursor: pointer;}
+        }
+      }
+    }
+  }
+}
+
+
+//responsive
+@media screen and (min-width: 1318px) {
+  .untold-top{display: none;}
+}
+
+@media screen and (max-width: 1317px) {
+  
+  .untold-container {
+    .container {
+      height: 500px;
+      background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+      flex-direction: column;
+      
+      .untold-right, .untold-left {display: none!important;}
+
+      .untold-middle {
+        width: 80%; height: auto;
+        display: flex;
+        flex: 1;
+        position: static;
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: center;
+
+        .text-container {
+          align-items: center;
+          justify-content: center;
+
+          .description{ text-align: center; }
+        }
+      }
+
+      .untold-top {
+        display: flex;
+        flex: 1;
+
+         //TITLE CONTAINER
+        .title-container { 
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          padding-left: 10px;
+
+          //TEXT STYLES
+          .title, .subtitle {
+            display: flex; flex: 1;
+            color: #fff;
+          }
+
+          .title {
+            align-items: flex-end;
+            text-align: center;
+            font: {
+              size: 24px;
+              weight: 500;
+            }
+          }
+
+          .subtitle {
+            font: {
+              size: 14px;
+              weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//************************** DIANA UNTOLD STORY SECTION END **************************
