@@ -498,5 +498,92 @@ body {
     font-weight: 300;
   }
 }
+.newsletter-container .container {
+  height: 337px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.newsletter-container .container .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.newsletter-container .container .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10px;
+}
+.newsletter-container .container .text-container .title {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: center;
+  color: #222;
+  font-size: 24px;
+  font-weight: 500;
+}
+.newsletter-container .container .text-container .subtitle {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+}
+.newsletter-container .container .input-container {
+  margin-top: 20px;
+}
+.newsletter-container .container .input-container input[type="text"] {
+  width: 500px;
+  height: 50px;
+  background: #F9F9FF;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  color: #9C9C9E;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 8px 0;
+  padding: 0 150px 0 8px;
+}
+.newsletter-container .container .input-container button {
+  margin-left: -143px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #E66586), to(#F09459));
+  background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+  border: none;
+  padding: 14px 25px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.newsletter-container .container .input-container button:hover {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
