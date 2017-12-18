@@ -1,172 +1,408 @@
 html {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 .container {
   position: relative;
   width: 70%;
   height: 100%;
   margin: 0 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 .services {
   width: 100%;
   height: auto;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #E66586), to(#F09459));
   background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  padding: 10% 3%; }
-  .services .title-container {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .services .title-container .title, .services .title-container .subtitle {
-      display: flex;
-      flex: 1;
-      color: #fff; }
-    .services .title-container .title {
-      align-items: flex-end;
-      text-align: center;
-      font-size: 24px;
-      font-weight: 500; }
-    .services .title-container .subtitle {
-      font-size: 14px;
-      font-weight: 300; }
-  .services .services-container {
-    display: flex;
-    flex: 4;
-    flex-direction: column;
-    padding-top: 5%; }
-    .services .services-container .row1 {
-      display: flex;
-      flex-wrap: wrap; }
-      .services .services-container .row1 .item {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        padding: 20px 15px; }
-        .services .services-container .row1 .item .image {
-          background: #fff;
-          position: relative;
-          display: flex;
-          height: 150px;
-          background-size: cover !important;
-          background-position: center !important; }
-          .services .services-container .row1 .item .image:hover {
-            cursor: pointer; }
-            .services .services-container .row1 .item .image:hover .overlay {
-              background-color: rgba(255, 255, 255, 0.7); }
-              .services .services-container .row1 .item .image:hover .overlay button {
-                opacity: 1; }
-          .services .services-container .row1 .item .image .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            transition: all .5s ease;
-            background-color: rgba(255, 255, 255, 0);
-            display: flex;
-            align-items: center;
-            justify-content: center; }
-            .services .services-container .row1 .item .image .overlay button {
-              opacity: 0;
-              background: linear-gradient(90deg, #E66586 0, #F09459 100%);
-              border: none;
-              padding: 10px 20px;
-              border-radius: 20px;
-              color: #fff;
-              font-size: 15px;
-              transition: all .5s ease; }
-              .services .services-container .row1 .item .image .overlay button:hover {
-                cursor: pointer; }
-          .services .services-container .row1 .item .image .button {
-            position: absolute;
-            width: 100px;
-            height: 30px;
-            background: linear-gradient(90deg, #E66586 0, #F09459 100%);
-            border-radius: 50px;
-            align-self: center;
-            left: 30%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 12px;
-            font-weight: 300;
-            display: none;
-            transition: all .5s ease; }
-            .services .services-container .row1 .item .image .button i {
-              color: #fff;
-              font-size: 12px;
-              margin-left: 2px; }
-        .services .services-container .row1 .item .text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
           flex-direction: column;
-          color: #fff;
-          display: flex;
+  padding: 10% 3%;
+}
+.services .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
           flex: 1;
-          padding-top: 10px; }
-          .services .services-container .row1 .item .text .title, .services .services-container .row1 .item .text .description {
-            display: flex;
-            flex: 1;
-            align-items: center;
-            font-size: 14px; }
-          .services .services-container .row1 .item .text .title {
-            font-weight: 500;
-            text-transform: uppercase; }
-          .services .services-container .row1 .item .text .description {
-            flex: 3;
-            font-weight: 300; }
-      .services .services-container .row1 .item1 .image {
-        background: url("../images/r1i1.jpg"); }
-      .services .services-container .row1 .item2 .image {
-        background: url("../images/r1i2.jpg"); }
-      .services .services-container .row1 .item3 .image {
-        background: url("../images/r1i3.jpg"); }
-      .services .services-container .row1 .item4 .image {
-        background: url("../images/r1i4.jpg"); }
-      .services .services-container .row1 .item5 .image {
-        background: url("../images/r2i1.jpg"); }
-      .services .services-container .row1 .item6 .image {
-        background: url("../images/r2i2.jpg"); }
-      .services .services-container .row1 .item7 .image {
-        background: url("../images/r2i3.jpg"); }
-      .services .services-container .row1 .item8 .image {
-        background: url("../images/r2i4.jpg"); }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.services .title-container .title, .services .title-container .subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+}
+.services .title-container .title {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+.services .title-container .subtitle {
+  font-size: 14px;
+  font-weight: 300;
+}
+.services .services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 5%;
+}
+.services .services-container .row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.services .services-container .row1 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 15px;
+}
+.services .services-container .row1 .item .image {
+  background: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.services .services-container .row1 .item .image:hover {
+  cursor: pointer;
+}
+.services .services-container .row1 .item .image:hover .overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.services .services-container .row1 .item .image:hover .overlay button {
+  opacity: 1;
+}
+.services .services-container .row1 .item .image .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background-color: rgba(255, 255, 255, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.services .services-container .row1 .item .image .overlay button {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #E66586), to(#F09459));
+  background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.services .services-container .row1 .item .image .overlay button:hover {
+  cursor: pointer;
+}
+.services .services-container .row1 .item .image .button {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #E66586), to(#F09459));
+  background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+  border-radius: 50px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  left: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  display: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.services .services-container .row1 .item .image .button i {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 2px;
+}
+.services .services-container .row1 .item .text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 10px;
+}
+.services .services-container .row1 .item .text .title, .services .services-container .row1 .item .text .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+.services .services-container .row1 .item .text .title {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.services .services-container .row1 .item .text .description {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  font-weight: 300;
+}
 
 .showBtn {
-  display: block; }
+  display: block;
+}
 
 /*responsive*/
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .services-container .row1 .item {
-    min-width: 100% !important; }
+    min-width: 100% !important;
+  }
   .services-container .row1 .item9 {
-    display: none; } }
+    display: none;
+  }
+}
 @media screen and (min-width: 423px) and (max-width: 704px) {
   .services-container .row1 .item {
-    min-width: 50% !important; }
+    min-width: 50% !important;
+  }
   .services-container .row1 .item9 {
-    display: none; } }
+    display: none;
+  }
+}
 @media screen and (min-width: 705px) and (max-width: 942px) {
   .services-container .row1 .item {
-    min-width: 30% !important; } }
+    min-width: 30% !important;
+  }
+}
 @media screen and (min-width: 943px) {
   .services-container .row1 .item {
-    min-width: 25% !important; } }
+    min-width: 25% !important;
+  }
+}
+.divider {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  background: #fff;
+}
+
+.untold-container .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.untold-container .container .untold-left, .untold-container .container .untold-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 500px;
+}
+.untold-container .container .untold-left {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #E66587), to(#EB7D70));
+  background: linear-gradient(90deg, #E66587 0, #EB7D70 100%);
+}
+.untold-container .container .untold-left .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10px;
+}
+.untold-container .container .untold-left .title-container .title, .untold-container .container .untold-left .title-container .subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+}
+.untold-container .container .untold-left .title-container .title {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+.untold-container .container .untold-left .title-container .subtitle {
+  font-size: 14px;
+  font-weight: 300;
+}
+.untold-container .container .untold-right {
+  background: url("../images/story-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.untold-container .container .untold-middle {
+  width: 500px;
+  height: 300px;
+  background: #fff;
+  position: absolute;
+  top: 23%;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.untold-container .container .untold-middle .text-container {
+  width: 60%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.untold-container .container .untold-middle .text-container .title, .untold-container .container .untold-middle .text-container .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.untold-container .container .untold-middle .text-container .title {
+  font-size: 14px;
+  font-weight: 500;
+}
+.untold-container .container .untold-middle .text-container .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+}
+.untold-container .container .untold-middle .text-container button {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #E66586), to(#F09459));
+  background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+  border: none;
+  padding: 8px 25px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.untold-container .container .untold-middle .text-container button:hover {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
