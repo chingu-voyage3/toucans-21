@@ -1,31 +1,172 @@
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 body {
   font-family: 'Poppins', sans-serif;
-}
+  overflow-x: hidden; }
 
 .container {
   position: relative;
   width: 70%;
   height: 100%;
   margin: 0 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 1px dotted red;
-}
+  justify-content: center;
+  align-items: center; }
+
+.services {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+  display: flex;
+  flex-direction: column;
+  padding: 10% 3%; }
+  .services .title-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .services .title-container .title, .services .title-container .subtitle {
+      display: flex;
+      flex: 1;
+      color: #fff; }
+    .services .title-container .title {
+      align-items: flex-end;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 500; }
+    .services .title-container .subtitle {
+      font-size: 14px;
+      font-weight: 300; }
+  .services .services-container {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    padding-top: 5%; }
+    .services .services-container .row1 {
+      display: flex;
+      flex-wrap: wrap; }
+      .services .services-container .row1 .item {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding: 20px 15px; }
+        .services .services-container .row1 .item .image {
+          background: #fff;
+          position: relative;
+          display: flex;
+          height: 150px;
+          background-size: cover !important;
+          background-position: center !important; }
+          .services .services-container .row1 .item .image:hover {
+            cursor: pointer; }
+            .services .services-container .row1 .item .image:hover .overlay {
+              background-color: rgba(255, 255, 255, 0.7); }
+              .services .services-container .row1 .item .image:hover .overlay button {
+                opacity: 1; }
+          .services .services-container .row1 .item .image .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            transition: all .5s ease;
+            background-color: rgba(255, 255, 255, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .services .services-container .row1 .item .image .overlay button {
+              opacity: 0;
+              background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+              border: none;
+              padding: 10px 20px;
+              border-radius: 20px;
+              color: #fff;
+              font-size: 15px;
+              transition: all .5s ease; }
+              .services .services-container .row1 .item .image .overlay button:hover {
+                cursor: pointer; }
+          .services .services-container .row1 .item .image .button {
+            position: absolute;
+            width: 100px;
+            height: 30px;
+            background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+            border-radius: 50px;
+            align-self: center;
+            left: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 300;
+            display: none;
+            transition: all .5s ease; }
+            .services .services-container .row1 .item .image .button i {
+              color: #fff;
+              font-size: 12px;
+              margin-left: 2px; }
+        .services .services-container .row1 .item .text {
+          flex-direction: column;
+          color: #fff;
+          display: flex;
+          flex: 1;
+          padding-top: 10px; }
+          .services .services-container .row1 .item .text .title, .services .services-container .row1 .item .text .description {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            font-size: 14px; }
+          .services .services-container .row1 .item .text .title {
+            font-weight: 500;
+            text-transform: uppercase; }
+          .services .services-container .row1 .item .text .description {
+            flex: 3;
+            font-weight: 300; }
+      .services .services-container .row1 .item1 .image {
+        background: url("../images/r1i1.jpg"); }
+      .services .services-container .row1 .item2 .image {
+        background: url("../images/r1i2.jpg"); }
+      .services .services-container .row1 .item3 .image {
+        background: url("../images/r1i3.jpg"); }
+      .services .services-container .row1 .item4 .image {
+        background: url("../images/r1i4.jpg"); }
+      .services .services-container .row1 .item5 .image {
+        background: url("../images/r2i1.jpg"); }
+      .services .services-container .row1 .item6 .image {
+        background: url("../images/r2i2.jpg"); }
+      .services .services-container .row1 .item7 .image {
+        background: url("../images/r2i3.jpg"); }
+      .services .services-container .row1 .item8 .image {
+        background: url("../images/r2i4.jpg"); }
+
+.showBtn {
+  display: block; }
+
+/*responsive*/
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .services-container .row1 .item {
+    min-width: 100% !important; }
+  .services-container .row1 .item9 {
+    display: none; } }
+@media screen and (min-width: 423px) and (max-width: 704px) {
+  .services-container .row1 .item {
+    min-width: 50% !important; }
+  .services-container .row1 .item9 {
+    display: none; } }
+@media screen and (min-width: 705px) and (max-width: 942px) {
+  .services-container .row1 .item {
+    min-width: 30% !important; } }
+@media screen and (min-width: 943px) {
+  .services-container .row1 .item {
+    min-width: 25% !important; } }
 
 /*# sourceMappingURL=style.css.map */
