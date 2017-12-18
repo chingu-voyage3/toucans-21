@@ -330,4 +330,75 @@ html {
 }
 
 
+//responsive
+@media screen and (min-width: 1318px) {
+  .untold-top{display: none;}
+}
+
+@media screen and (max-width: 1317px) {
+  
+  .untold-container {
+    .container {
+      height: 500px;
+      background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+      flex-direction: column;
+      
+      .untold-right, .untold-left {display: none!important;}
+
+      .untold-middle {
+        width: 80%; height: auto;
+        display: flex;
+        flex: 1;
+        position: static;
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: center;
+
+        .text-container {
+          align-items: center;
+          justify-content: center;
+
+          .description{ text-align: center; }
+        }
+      }
+
+      .untold-top {
+        display: flex;
+        flex: 1;
+
+         //TITLE CONTAINER
+        .title-container { 
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          padding-left: 10px;
+
+          //TEXT STYLES
+          .title, .subtitle {
+            display: flex; flex: 1;
+            color: #fff;
+          }
+
+          .title {
+            align-items: flex-end;
+            text-align: center;
+            font: {
+              size: 24px;
+              weight: 500;
+            }
+          }
+
+          .subtitle {
+            font: {
+              size: 14px;
+              weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 //************************** DIANA UNTOLD STORY SECTION END **************************
