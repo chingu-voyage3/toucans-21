@@ -489,3 +489,69 @@ html {
 }
 
 //************************** DIANA NEWSLETTER SECTION END **************************
+
+
+//************************** DIANA INFO SECTION START **************************//
+
+.info-container {
+
+  .container {
+    height: 340px;
+    display: flex;
+
+    .address, .email, .phone {
+      display: flex; flex: 1;
+      height: 100%;
+    }
+
+    .icon, .text {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    i {
+      border: 1px solid #fff; //dont delete
+      width: 60px; height: 60px;
+      color: #fff;
+      font-size: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 1s ease;
+      border-radius: 3px;
+    }
+
+    
+    .icon {
+      &:hover {
+        i {
+          background: linear-gradient(130deg, #E66586 0, #F09459 100%);
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .text {
+      flex-direction: column;
+      flex: 2;
+      color: #fff;
+      align-items: flex-start;
+
+      .title, .description {
+        font-weight: 300;
+        font-size: 14px;
+      }
+
+      .title {
+        font-weight: 500;
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
+//************************** DIANA INFO SECTION END **************************//
