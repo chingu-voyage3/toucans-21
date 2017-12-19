@@ -184,13 +184,19 @@ body {
   background: linear-gradient(90deg, #E66586 0, #F09459 100%);
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (max-width: 320px) {
   .container {
     width: 98%;
     margin: 0 1%;
   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .header-container .container {
     margin-top: 50px;
+  }
+  .header-container .container .nav-container .logo {
+    flex: 9;
   }
 }
 
@@ -254,6 +260,20 @@ body {
 
 .features-container .container .text .description {
   color: #777;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .features-container .container {
+    height: auto !important;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+  .features-container .container .address, .features-container .container .email, .features-container .container .phone {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
 }
 
 .services {

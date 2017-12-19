@@ -184,12 +184,15 @@ body {
 
 
 //responsive 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+//general responsiveness for container
+@media screen and (max-width: 320px){
   .container {
     width: 98%;
     margin: 0 1%;
   }
+}
 
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .header-container {
     .container {
       margin-top: 50px;
@@ -200,6 +203,7 @@ body {
       }
     }
   }
+}
 
 
 //************************** DIANA HEADER SECTION END **************************//
@@ -269,6 +273,24 @@ body {
 
       .description {
         color: #777;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .features-container {
+    .container {
+      height: auto!important;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 30px 10px;
+
+      .address, .email, .phone {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 0;
       }
     }
   }
