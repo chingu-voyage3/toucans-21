@@ -29,13 +29,16 @@ body {
 
 //************************** DIANA FEATURES SECTION START **************************//
 .features-container {
-
   .container {
     height: 300px;
     display: flex;
+    padding: 42px;
     align-items: center;
     justify-content: center;
     background: #fff;
+    flex-wrap: wrap;
+    height: auto;
+   
 
     .address, .email, .phone {
       display: flex; flex: 1;
@@ -96,6 +99,8 @@ body {
     }
   }
 }
+
+
 
 //************************** DIANA FEATURES SECTION END **************************//
 
