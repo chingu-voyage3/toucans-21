@@ -28,15 +28,123 @@ body {
   align-items: center;
 }
 
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.disableAnimation {
+  animation: none !important;
+}
+
 .header-container {
-  border: 1px dashed;
+  border: 1px dashed transparent;
 }
 
 .header-container .container {
-  border: 1px dotted red;
   height: 600px;
   margin-top: 100px;
   background: linear-gradient(130deg, #E66586 0, #F09459 100%);
+  flex-direction: column;
+}
+
+.header-container .container .nav-container, .header-container .container .text-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+.header-container .container .nav-container .logo, .header-container .container .nav-container .items, .header-container .container .nav-container .burger {
+  display: flex;
+  flex: 1;
+}
+
+.header-container .container .nav-container .logo {
+  flex: 2;
+  background: url("/images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-container .container .nav-container .items {
+  flex: 9;
+  justify-content: flex-end;
+  align-items: center;
+  transform-origin: right;
+  transform: scale(0);
+  animation: animateItems .3s forwards;
+}
+
+.header-container .container .nav-container .items ul {
+  list-style: none;
+}
+
+.header-container .container .nav-container .items ul li {
+  float: left;
+  padding-right: 35px;
+}
+
+.header-container .container .nav-container .items ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all .2s ease;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.header-container .container .nav-container .items ul li a:hover {
+  color: #fff;
+}
+
+.header-container .container .nav-container .animateItems {
+  animation: animateItemsR .3s forwards;
+}
+
+@keyframes animateItems {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes animateItemsR {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.header-container .container .nav-container .burger {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+  opacity: 1;
+}
+
+.header-container .container .nav-container .burger i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.header-container .container .nav-container .burger i:hover {
+  cursor: pointer;
+}
+
+.header-container .container .nav-container .burger .burger-x {
+  position: absolute;
+}
+
+.header-container .container .text-container {
+  flex: 6;
 }
 
 .features-container .container {
