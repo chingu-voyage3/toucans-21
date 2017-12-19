@@ -894,6 +894,31 @@ body {
   }
 }
 
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .info-container {
+    .container {
+      flex-direction: column;
+      height: auto!important;
+
+      .address, .email, .phone {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 50px 20px 20px 20px;
+      }
+
+      .address {
+        padding-top: 100px;
+      }
+
+      .phone {
+        padding-bottom: 100px;
+      }
+    }
+  }
+}
+
 //************************** DIANA INFO SECTION END **************************//
 
 
@@ -946,14 +971,10 @@ body {
       }
       
       .social {
-        display: flex; flex: 2;
-        justify-content: space-around;
-        align-items: center;
+        
 
         .facebook, .twitter, .medium, .gplus {
-          display: flex; flex: 1;
-          align-items: center;
-          justify-content: center;
+          
 
           i {
             color: rgba(255,255,255,.8);
@@ -965,6 +986,7 @@ body {
             align-items: center;
             justify-content: center;
             transition: all .3s ease;
+            
 
             &:hover {
               cursor: pointer;
@@ -978,5 +1000,25 @@ body {
   }
 }
 
+
+//responsive
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .footer-container {
+    .container {
+      height: auto;
+      .nav-container {
+        flex-direction: column;
+        padding: 30px 20px;
+
+        .logo {
+          background-image: none;
+          margin-bottom: 10px;
+        }
+
+        .social {align-items: flex-start;}
+      }
+    }
+  }
+}
 //************************** DIANA FOOTER SECTION END **************************//
 
