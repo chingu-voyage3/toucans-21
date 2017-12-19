@@ -324,6 +324,19 @@ body {
   }
 }
 
+  //tablet
+  @media screen and (min-width: 768px) and (max-width: 900px) {
+    .features-container {
+      .container {
+        padding: 80px 20px;
+        height: auto;
+        .address, .email, .phone {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
 //************************** DIANA FEATURES SECTION END **************************//
 
 //************************** DIANA SERVICES SECTION START **************************//
@@ -525,6 +538,7 @@ body {
   }
 
 
+  //mobile
   @media screen and (min-width: 320px) and (max-width: 767px) {
     .services {
       .container {
@@ -533,6 +547,8 @@ body {
       }
     }
   }
+
+
 //************************** DIANA SERVICES SECTION END **************************
 
 
