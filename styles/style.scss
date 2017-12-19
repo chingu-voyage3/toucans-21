@@ -786,3 +786,86 @@ body {
 //************************** DIANA INFO SECTION END **************************//
 
 
+//************************** DIANA FOOTER SECTION START **************************//
+.footer-container {
+  border: 1px dashed rgba(0,0,0,0);
+
+  .container {
+    height: 60px;
+    background: rgba(0,0,0,.2);
+    flex-direction: column;
+
+    .nav-container, .text-container {
+      display: flex; flex: 1;
+      width: 100%; 
+    }
+
+    //NAV CONTAINER
+    .nav-container {
+      .logo, .copyright, .social {
+        display: flex; flex: 1;
+      }
+
+      //logo
+      .logo {
+        flex: 2;
+        background: url('/images/logo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      //--copyright
+      .copyright {
+        flex: 8;
+        justify-content: center;
+        align-items: center;
+        transform-origin: right;
+        color: #fff;
+        font: {
+          size: 14px;
+          weight: 300;
+        }
+
+        .special, i {
+          color: #e66686;
+          margin: 0 5px;
+        }
+
+        .special:hover {cursor: pointer;}
+      }
+      
+      .social {
+        display: flex; flex: 2;
+        justify-content: space-around;
+        align-items: center;
+
+        .facebook, .twitter, .medium, .gplus {
+          display: flex; flex: 1;
+          align-items: center;
+          justify-content: center;
+
+          i {
+            color: rgba(255,255,255,.8);
+            margin: 0 3px;
+            font-size: 13px;
+            border: 1px solid rgba(255,255,255,.4);
+            width: 30px; height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s ease;
+
+            &:hover {
+              cursor: pointer;
+              border: none;
+              background: linear-gradient(90deg, #E66586 0, #f09459 100%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//************************** DIANA FOOTER SECTION END **************************//
+

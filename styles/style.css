@@ -725,6 +725,86 @@ body {
   font-weight: 500;
   margin: 15px 0;
 }
+
+.footer-container {
+  border: 1px dashed transparent;
+}
+
+.footer-container .container {
+  height: 60px;
+  background: rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+}
+
+.footer-container .container .nav-container, .footer-container .container .text-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+.footer-container .container .nav-container .logo, .footer-container .container .nav-container .copyright, .footer-container .container .nav-container .social {
+  display: flex;
+  flex: 1;
+}
+
+.footer-container .container .nav-container .logo {
+  flex: 2;
+  background: url("/images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-container .container .nav-container .copyright {
+  flex: 8;
+  justify-content: center;
+  align-items: center;
+  transform-origin: right;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-container .container .nav-container .copyright .special, .footer-container .container .nav-container .copyright i {
+  color: #e66686;
+  margin: 0 5px;
+}
+
+.footer-container .container .nav-container .copyright .special:hover {
+  cursor: pointer;
+}
+
+.footer-container .container .nav-container .social {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-container .container .nav-container .social .facebook, .footer-container .container .nav-container .social .twitter, .footer-container .container .nav-container .social .medium, .footer-container .container .nav-container .social .gplus {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container .container .nav-container .social .facebook i, .footer-container .container .nav-container .social .twitter i, .footer-container .container .nav-container .social .medium i, .footer-container .container .nav-container .social .gplus i {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 3px;
+  font-size: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+}
+
+.footer-container .container .nav-container .social .facebook i:hover, .footer-container .container .nav-container .social .twitter i:hover, .footer-container .container .nav-container .social .medium i:hover, .footer-container .container .nav-container .social .gplus i:hover {
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(90deg, #E66586 0, #f09459 100%);
+}
  
 
  /*# sourceMappingURL= style.css.map */
