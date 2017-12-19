@@ -184,19 +184,36 @@ body {
   background: linear-gradient(90deg, #E66586 0, #F09459 100%);
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 98%;
     margin: 0 1%;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .header-container .container {
     margin-top: 50px;
   }
   .header-container .container .nav-container .logo {
     flex: 9;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .header-container .container {
+    margin-top: 50px;
+  }
+  .header-container .container .nav-container .logo {
+    flex: 2;
+    padding-left: 30px;
   }
 }
 
@@ -262,7 +279,7 @@ body {
   color: #777;
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .features-container .container {
     height: auto !important;
     flex-wrap: wrap;
@@ -497,7 +514,7 @@ body {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .services .container {
     flex-direction: column;
     padding: 50px 0;
@@ -610,7 +627,7 @@ body {
   cursor: pointer;
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .untold-container .container {
     padding: 50px 0;
     height: auto !important;
@@ -761,7 +778,7 @@ body {
   cursor: pointer;
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .newsletter-container .container .text-container .input-container {
     display: flex;
     flex-direction: column;
@@ -833,7 +850,7 @@ body {
   margin: 15px 0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .info-container .container {
     flex-direction: column;
     height: auto !important;
@@ -918,7 +935,7 @@ body {
   background: linear-gradient(90deg, #E66586 0, #f09459 100%);
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-container .container {
     height: auto;
   }

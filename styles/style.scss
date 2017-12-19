@@ -183,22 +183,50 @@ body {
 }
 
 
-//responsive 
+
 //general responsiveness for container
-@media screen and (max-width: 320px){
+//mobile
+@media screen and (max-width: 767px){
   .container {
     width: 98%;
     margin: 0 1%;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+
+//tablet
+@media screen and (min-width: 768px){
+  .container {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+
+
+//responsive mobile
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .header-container {
     .container {
       margin-top: 50px;
       .nav-container {
         .logo {
           flex: 9;
+        }
+      }
+    }
+  }
+}
+
+//responsive tablet
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .header-container {
+    .container {
+      margin-top: 50px;
+      .nav-container {
+        .logo {
+          flex: 2;
+          padding-left: 30px;
         }
       }
     }
@@ -279,7 +307,7 @@ body {
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .features-container {
     .container {
       height: auto!important;
@@ -497,7 +525,7 @@ body {
   }
 
 
-  @media screen and (min-width: 320px) and (max-width: 500px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     .services {
       .container {
         flex-direction: column;
@@ -619,7 +647,7 @@ body {
 
 //responsive
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .untold-container {
     .container {
       padding: 50px 0;
@@ -802,7 +830,7 @@ body {
 
 //responsive
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .newsletter-container {
     .container {
       .text-container {
@@ -895,7 +923,7 @@ body {
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .info-container {
     .container {
       flex-direction: column;
@@ -1002,7 +1030,7 @@ body {
 
 
 //responsive
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-container {
     .container {
       height: auto;
