@@ -182,6 +182,26 @@ body {
   }
 }
 
+
+//responsive 
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .container {
+    width: 98%;
+    margin: 0 1%;
+  }
+
+  .header-container {
+    .container {
+      margin-top: 50px;
+      .nav-container {
+        .logo {
+          flex: 9;
+        }
+      }
+    }
+  }
+
+
 //************************** DIANA HEADER SECTION END **************************//
 
 //************************** DIANA FEATURES SECTION START **************************//

@@ -184,6 +184,16 @@ body {
   background: linear-gradient(90deg, #E66586 0, #F09459 100%);
 }
 
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .container {
+    width: 98%;
+    margin: 0 1%;
+  }
+  .header-container .container {
+    margin-top: 50px;
+  }
+}
+
 .features-container .container {
   height: 300px;
   display: flex;
