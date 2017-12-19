@@ -996,7 +996,7 @@ body {
   background: linear-gradient(90deg, #E66586 0, #f09459 100%);
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 900px) {
   .footer-container .container {
     height: auto;
   }
