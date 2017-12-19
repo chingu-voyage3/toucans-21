@@ -147,6 +147,43 @@ body {
   flex: 6;
 }
 
+.header-container .container .text-container .title-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container .container .text-container .title-container .title {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.header-container .container .text-container .title-container .subtitle {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.header-container .container .text-container button {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  transition: all .2s ease;
+}
+
+.header-container .container .text-container button:hover {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+}
+
 .features-container .container {
   height: 300px;
   display: flex;

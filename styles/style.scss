@@ -34,6 +34,7 @@ body {
 //************************** DIANA HEADER SECTION START **************************//
 .header-container {
   border: 1px dashed rgba(0,0,0,0);
+
   .container {
     height: 600px;
     margin-top: 100px;
@@ -136,6 +137,47 @@ body {
     .text-container {
       flex: 6;
 
+        //TITLE CONTAINER
+      .title-container { 
+        display: flex; flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        //TEXT STYLES
+        .title {
+          text-align: center;
+          color: #fff;
+          font: {
+            size: 36px;
+            weight: 500;
+          }
+        }
+
+        .subtitle {
+          color: #fff;
+          font: {
+            size: 12px;
+            weight: 300;
+          }
+        }
+      }
+
+      button {
+        background: rgba(0,0,0,0);
+        border: 1px solid #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 15px;
+        transition: all .2s ease;
+
+        &:hover {
+          cursor: pointer;
+          border: 1px solid rgba(0,0,0,0);
+          background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+        }
+      }
     }
   }
 }
