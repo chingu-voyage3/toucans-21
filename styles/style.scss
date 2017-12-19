@@ -539,7 +539,7 @@ body {
 
 
   //mobile
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 900px) {
     .services {
       .container {
         flex-direction: column;
@@ -547,7 +547,6 @@ body {
       }
     }
   }
-
 
 //************************** DIANA SERVICES SECTION END **************************
 
@@ -662,7 +661,7 @@ body {
 
 
 //responsive
-
+//mobile
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .untold-container {
     .container {
@@ -675,6 +674,36 @@ body {
 
       .untold-middle {
         width: 90%!important;
+        .text-container {
+          width: 90%;
+          padding: 30px 0;
+          height: auto;
+
+          .title, .description, .button {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//tablet
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .untold-container {
+    .container {
+      padding: 50px 0;
+      height: auto!important;
+
+      .untold-top {
+        margin-bottom: 30px;
+      }
+
+      .untold-middle {
+        width: 95%!important;
+        
         .text-container {
           width: 90%;
           padding: 30px 0;
