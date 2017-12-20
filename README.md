@@ -10,7 +10,7 @@
 * Chrome extension CSS Viewer - to get the widths/heights/font-sizes/font-weights/colors etc of elements
 * Chrome extension Colorpick Eyedropper - to get the colors of elements
 * Visual Studio Code 1.19.0
-* HTML, SCSS/CSS, JavaScript/jQuery
+* HTML, SCSS/CSS, JavaScript/jQuery, Git 2.15.1
 
 **Coded by**: @dianastanciu
 
