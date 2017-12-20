@@ -229,6 +229,7 @@ body {
   display: flex;
   flex: 1;
   height: 100%;
+  padding: 0 20px;
 }
 
 .features-container .container .icon, .features-container .container .text {
@@ -304,7 +305,7 @@ body {
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) {
   .features-container .container {
     padding: 80px 50px;
   }
