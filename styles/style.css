@@ -64,9 +64,11 @@ body {
 
 .header-container .container .nav-container .logo {
   flex: 2;
-  background: url("/images/logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 25px 0 0 30px;
+}
+
+.header-container .container .nav-container .logo img {
+  height: 30px;
 }
 
 .header-container .container .nav-container .items {
@@ -153,6 +155,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .header-container .container .text-container .title-container .title {
