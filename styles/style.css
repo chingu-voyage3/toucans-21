@@ -690,12 +690,18 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  .untold-top {
+  .untold-container .container .untold-top {
     display: none;
+  }
+  .untold-container .container .untold-left, .untold-container .container .untold-right {
+    height: 500px;
+  }
+  .untold-container .container .untold-left .title-container .title {
+    font-size: 22px;
   }
 }
 
-@media screen and (max-width: 1317px) {
+@media screen and (max-width: 991px) {
   .untold-container .container {
     height: 500px;
     background: linear-gradient(90deg, #E66586 0, #F09459 100%);

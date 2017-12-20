@@ -731,12 +731,23 @@ body {
 }
 
 
-
-@media screen and (min-width: 992px) {
-  .untold-top{display: none;}
+//sm-laptop
+@media screen and (min-width: 992px){
+  .untold-container {
+    .container {
+      .untold-top{display: none;}
+      .untold-left, .untold-right {height: 500px;}
+      .untold-left {
+        .title-container {
+         .title {font-size: 22px;}
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 1317px) {
+
+@media screen and (max-width: 991px) {
   
   .untold-container {
     .container {
