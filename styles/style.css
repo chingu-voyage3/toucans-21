@@ -831,11 +831,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
   }
   .newsletter-container .container .text-container .input-container input[type="text"] {
-    width: 80%;
     padding: 8px 10px;
     margin-bottom: 10px;
+    width: 100%;
   }
   .newsletter-container .container .text-container .input-container button {
     margin: auto;
