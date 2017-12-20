@@ -1120,10 +1120,14 @@ body {
 
 
 //responsive
-@media screen and (min-width: 320px) and (max-width: 900px) {
+//mobile
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-container {
     .container {
       height: auto;
+      margin: auto;
+      width: 100%; 
+      
       .nav-container {
         flex-direction: column;
         padding: 30px 20px;
@@ -1134,9 +1138,34 @@ body {
         }
 
         .social {align-items: flex-start;}
+
+        .copyright {justify-content: flex-start;}
       }
     }
   }
 }
+
+//tablet
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .footer-container {
+    .container {
+      height: auto;
+      .nav-container {
+        flex-direction: column;
+        padding: 10px 22px;
+
+        .logo {
+          background-image: none;
+          margin-bottom: 10px;
+        }
+
+        .copyright {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+
 //************************** DIANA FOOTER SECTION END **************************//
 
