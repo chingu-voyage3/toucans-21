@@ -1175,6 +1175,7 @@ body {
   .footer-container {
     .container {
       height: auto;
+
       .nav-container {
         flex-direction: column;
         padding: 10px 22px;
@@ -1184,9 +1185,28 @@ body {
           margin-bottom: 10px;
         }
 
-        .copyright {
-          justify-content: flex-start;
+        .copyright {justify-content: flex-start;}
+      }
+    }
+  }
+}
+
+//sm-laptop++
+@media screen and (min-width: 992px) {
+  .footer-container {
+    .container {
+      height: auto;
+
+      .nav-container {
+        padding: 10px 22px;
+
+        .logo {
+          margin-bottom: 10px;
+          img {display: none;}
         }
+
+        .copyright {justify-content: flex-start;}
+        .social {align-items: center;}
       }
     }
   }

@@ -1052,6 +1052,27 @@ body {
     justify-content: flex-start;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .footer-container .container {
+    height: auto;
+  }
+  .footer-container .container .nav-container {
+    padding: 10px 22px;
+  }
+  .footer-container .container .nav-container .logo {
+    margin-bottom: 10px;
+  }
+  .footer-container .container .nav-container .logo img {
+    display: none;
+  }
+  .footer-container .container .nav-container .copyright {
+    justify-content: flex-start;
+  }
+  .footer-container .container .nav-container .social {
+    align-items: center;
+  }
+}
  
 
  /*# sourceMappingURL= style.css.map */
