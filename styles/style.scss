@@ -218,8 +218,8 @@ body {
   }
 }
 
-//responsive tablet
-@media screen and (min-width: 768px) and (max-width: 991px) {
+//responsive tablet + small laptop
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .header-container {
     .container {
       margin-top: 50px;
@@ -328,7 +328,7 @@ body {
   @media screen and (min-width: 768px) and (max-width: 991px) {
     .features-container {
       .container {
-        padding: 80px 20px;
+        padding: 80px 50px;
         height: auto;
         .address, .email, .phone {
           flex-direction: column;
@@ -337,6 +337,20 @@ body {
       }
     }
   }
+
+
+    //small laptop
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      .features-container {
+        .container {
+          padding: 80px 50px;
+          
+          .icon {
+            margin-top: -100px;
+          }
+        }
+      }
+    }
 //************************** DIANA FEATURES SECTION END **************************//
 
 //************************** DIANA SERVICES SECTION START **************************//
