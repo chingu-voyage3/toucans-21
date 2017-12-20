@@ -17,19 +17,39 @@ body {
   margin: 0;
   
 }
+
+.hide {opacity: 0;}
+.show {opacity: 1;}
+.disableAnimation {animation:none!important}
+
 .container {
   position: relative;
-  width: 70%;
+  width: 80%;
   height: 100%;
-  margin: 0 15%;
+  margin: 0 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hide {opacity: 0;}
-.show {opacity: 1;}
-.disableAnimation {animation:none!important}
+//*** general responsiveness for container ***//
+//mobile
+@media screen and (max-width: 767px){
+  .container {
+    width: 98%;
+    margin: 0 1%;
+  }
+}
+//tablet
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+
+
 
 //************************** DIANA HEADER SECTION START **************************//
 .header-container {
@@ -184,27 +204,21 @@ body {
   }
 }
 
+//responsiveness
 
-
-//general responsiveness for container
-//mobile
-@media screen and (max-width: 767px){
-  .container {
-    width: 98%;
-    margin: 0 1%;
+//xs
+@media screen and (max-width: 319px) {
+  .header-container {
+    .container {
+      margin-top: 50px;
+      .nav-container {
+        .logo {
+          flex: 9;
+        }
+      }
+    }
   }
 }
-
-
-//tablet
-@media screen and (min-width: 768px){
-  .container {
-    width: 90%;
-    margin: 0 5%;
-  }
-}
-
-
 
 //responsive mobile
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -333,6 +347,7 @@ body {
       .container {
         padding: 80px 50px;
         height: auto;
+
         .address, .email, .phone {
           flex-direction: column;
           align-items: flex-start;
@@ -348,9 +363,7 @@ body {
         .container {
           padding: 80px 50px;
           
-          .icon {
-            margin-top: -100px;
-          }
+          .icon {margin-top: -100px;}
         }
       }
     }
@@ -533,7 +546,7 @@ body {
     }
   }
 
-  @media screen and (min-width: 423px) and (max-width: 704px){
+  @media screen and (min-width: 426px) and (max-width: 704px){
     .services-container {
       .row1 {
         .item {min-width: 50%!important;}
