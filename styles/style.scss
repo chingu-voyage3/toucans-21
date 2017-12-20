@@ -361,6 +361,8 @@ body {
     
     .container {
       background: linear-gradient(90deg, #E66586 0, #f09459 100%);
+      flex-direction: column;
+      padding: 50px 0;
 
 
         //TITLE CONTAINER
@@ -551,16 +553,6 @@ body {
     }
   }
 
-
-  //mobile // tablet // sm-laptop
-  @media screen and (min-width: 320px) and (max-width: 1200px) {
-    .services {
-      .container {
-        flex-direction: column;
-        padding: 50px 0;
-      }
-    }
-  }
 
 //************************** DIANA SERVICES SECTION END **************************
 
