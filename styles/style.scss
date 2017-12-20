@@ -552,8 +552,8 @@ body {
   }
 
 
-  //mobile
-  @media screen and (min-width: 320px) and (max-width: 991px) {
+  //mobile // tablet // sm-laptop
+  @media screen and (min-width: 320px) and (max-width: 1200px) {
     .services {
       .container {
         flex-direction: column;
