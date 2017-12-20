@@ -565,45 +565,43 @@ body {
     display: flex;
     position: relative;
 
-    .untold-left, .untold-right {
-      display: flex; flex: 1;
-    }
-
-    .untold-left {
-      background: linear-gradient(90deg, #E66587 0, #EB7D70 100%);
-
-      //TITLE CONTAINER
-    .title-container { 
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      padding-left: 10px;
-
-      //TEXT STYLES
-      .title, .subtitle {
+      .untold-left, .untold-right {
         display: flex; flex: 1;
-        color: #fff;
       }
 
-      .title {
-        align-items: flex-end;
-        text-align: center;
-        font: {
-          size: 24px;
-          weight: 500;
+      .untold-left {
+        background: linear-gradient(90deg, #E66587 0, #EB7D70 100%);
+
+        //TITLE CONTAINER
+      .title-container { 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 10px;
+
+        //TEXT STYLES
+        .title, .subtitle {
+          display: flex; flex: 1;
+          color: #fff;
+        }
+
+        .title {
+          align-items: flex-end;
+          text-align: center;
+          font: {
+            size: 24px;
+            weight: 500;
+          }
+        }
+
+        .subtitle {
+          font: {
+            size: 14px;
+            weight: 300;
+          }
         }
       }
-
-      .subtitle {
-        font: {
-          size: 14px;
-          weight: 300;
-        }
-      }
-    }
-
-
     }
 
     .untold-right {
@@ -720,7 +718,7 @@ body {
 
 
 
-@media screen and (min-width: 1318px) {
+@media screen and (min-width: 992px) {
   .untold-top{display: none;}
 }
 
@@ -910,6 +908,9 @@ body {
 
         .input-container {
           width: 80%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
 
           input[type="text"] {
             width: 100%;
@@ -918,7 +919,7 @@ body {
           }
     
           button {
-            margin: -160px;
+            margin: auto;
             padding: 9px 35px;
           }
         }

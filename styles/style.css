@@ -680,7 +680,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1318px) {
+@media screen and (min-width: 992px) {
   .untold-top {
     display: none;
   }
@@ -834,6 +834,9 @@ body {
   }
   .newsletter-container .container .text-container .input-container {
     width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .newsletter-container .container .text-container .input-container input[type="text"] {
     width: 100%;
@@ -841,7 +844,7 @@ body {
     margin-bottom: 10px;
   }
   .newsletter-container .container .text-container .input-container button {
-    margin: -160px;
+    margin: auto;
     padding: 9px 35px;
   }
 }
