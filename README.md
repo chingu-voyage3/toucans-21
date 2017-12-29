@@ -3,7 +3,7 @@
 **Project Name**: T21 Dinomuz Clone
 
 **Description**: 
-* This is a clone of the website template called [Dinomuz](https://colorlib.com/etc/dinomuz/index.html). Learning purposes only. 
+* Cloning the [Dinomuz website template](https://colorlib.com/etc/dinomuz/index.html). Learning purposes only. 
 * Used the website solely as a mock-up/visual guide for what the page was going to look like and what behaviours it would have.
 
 **Tools**: 
