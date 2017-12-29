@@ -1,8 +1,4 @@
-//************************** IMPORT START **************************//
-@import url("responsive.scss");
-//************************** IMPORT END **************************//
-
-//************************** BASIC START **************************//
+//************************** BASICS START **************************//
 html {
   box-sizing: border-box;
 }
@@ -22,7 +18,7 @@ body {
   margin: 0;
 }
 
-//************************** BASIC END **************************//
+//************************** BASICS END **************************//
 
 //************************** GENERAL START **************************//
 .hide {opacity: 0;}
@@ -39,10 +35,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 //************************** GENERAL END **************************//
 
-//************************** DIANA HEADER SECTION START **************************//
+//************************** HEADER START **************************//
 .header-container {
   border: 1px dashed rgba(0,0,0,0);
 
@@ -179,10 +174,9 @@ body {
     }
   }
 }
+//************************** HEADER END **************************//
 
-//************************** DIANA HEADER SECTION END **************************//
-
-//************************** DIANA FEATURES SECTION START **************************//
+//************************** FEATURES START **************************//
 .features-container {
   .container {
     height: 300px;
@@ -249,10 +243,9 @@ body {
     }
   }
 }
+//************************** FEATURES END **************************//
 
-//************************** DIANA FEATURES SECTION END **************************//
-
-//************************** DIANA SERVICES SECTION START **************************//
+//************************** SERVICES START **************************//
   .services {
     height: auto;
     display: flex;
@@ -414,8 +407,7 @@ body {
       }
     }
   }
-
-//************************** DIANA SERVICES SECTION END **************************
+//************************** SERVICES END **************************
 
 
 .divider {
@@ -424,8 +416,7 @@ body {
 
   .container {background: #fff;}
 }
-
-//************************** DIANA UNTOLD STORY SECTION START **************************
+//************************** UNTOLD START **************************
 
 .untold-container {
   .container {
@@ -523,12 +514,9 @@ body {
     }
   }
 }
+//************************** UNTOLD END **************************
 
-//************************** DIANA UNTOLD STORY SECTION END **************************
-
-
-
-//************************** DIANA NEWSLETTER SECTION START **************************
+//************************** NEWSLETTER START **************************
 .newsletter-container {
   .container {
     height: 337px;
@@ -603,12 +591,9 @@ body {
     }
   }
 }
+//************************** NEWSLETTER END **************************
 
-//************************** DIANA NEWSLETTER SECTION END **************************
-
-
-//************************** DIANA INFO SECTION START **************************//
-
+//************************** INFO START **************************//
 .info-container {
 
   .container {
@@ -669,12 +654,10 @@ body {
     }
   }
 }
+//************************** INFO END **************************//
 
 
-//************************** DIANA INFO SECTION END **************************//
-
-
-//************************** DIANA FOOTER SECTION START **************************//
+//************************** FOOTER START **************************//
 .footer-container {
   border: 1px dashed rgba(0,0,0,0);
 
@@ -742,5 +725,10 @@ body {
   }
 }
 
-//************************** DIANA FOOTER SECTION END **************************//
+//************************** FOOTER END **************************//
+
+/*i know the import statement should be placed at the beginning of the scss 
+file, but for whatever reason it is not working on my OS, so I will leave
+it here for the time being*/
+@import "responsive";
 

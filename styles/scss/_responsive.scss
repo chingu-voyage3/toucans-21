@@ -1,4 +1,4 @@
-//*** CONTAINER GENERAL *** START ***//
+//************************** GENERAL START **************************//
 //mobile
 @media screen and (max-width: 767px) {
     .container {
@@ -14,9 +14,9 @@
         margin: 0 5%;
     }
 }
-//*** CONTAINER GENERAL *** END ***//
+//************************** GENERAL END **************************//
 
-//*** HEADER SECTION *** START ***//
+//************************** HEADER START **************************//
 //mobile
 @media screen and  (max-width: 767px) {
     .header-container {
@@ -46,10 +46,9 @@
     }
 }
 
-//*** HEADER SECTION *** END ***//
+//************************** HEADER START **************************//
 
-//*** FEATURES SECTION *** START ***//
-
+//************************** FEATURES START **************************//
 //mobile
 @media screen and (max-width: 767px) {
     .features-container {
@@ -96,11 +95,10 @@
         }
     }
 }
+//************************** FEATURES END **************************//
 
-//*** FEATURES SECTION *** END ***//
 
-
-//*** SERVICES SECTION *** START ***//
+//************************** SERVICES START **************************//
 /* 1/1 */
 @media screen and (max-width: 425px) {
     .services-container {
@@ -148,11 +146,9 @@
         }
     }
 } 
+//************************** SERVICES END **************************//
 
-//*** SERVICES SECTION *** END ***//
-
-//*** UNTOLD STORY SECTION *** START ***//
-
+//************************** UNTOLD START **************************//
 //mobile
 @media screen and (max-width: 767px) {
     .untold-container {
@@ -233,10 +229,11 @@
             height: 500px;
             background: linear-gradient(90deg, #E66586 0, #F09459 100%);
             flex-direction: column;
-            .untold-right,
-            .untold-left {
-                display: none!important;
-            }
+
+            .untold-right, 
+            .untold-left 
+                {display: none!important;}
+
             .untold-middle {
                 width: 80%;
                 height: auto;
@@ -256,13 +253,13 @@
             }
             .untold-top {
                 display: flex;
-                flex: 1; //TITLE CONTAINER
+                flex: 1; 
                 .title-container {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: center;
-                    padding-left: 10px; //TEXT STYLES
+                    padding-left: 10px; 
                     .title,
                     .subtitle {
                         display: flex;
@@ -288,11 +285,10 @@
         }
     }
 }
+//************************** UNTOLD END **************************//
 
-//*** UNTOLD STORY SECTION *** END ***//
 
-
-//*** NEWSLETTER SECTION *** START ***//
+//************************** NEWSLETTER START **************************//
 //mobile
 @media screen and (max-width: 767px) {
     .newsletter-container {
@@ -344,11 +340,10 @@
         }
     }
 }
+//************************** NEWSLETTER END **************************//
 
-//*** NEWSLETTER SECTION *** END ***//
 
-
-//*** INFO SECTION *** START ***//
+//************************** INFO START **************************//
 //mobile
 @media screen and (max-width: 767px) {
     .info-container {
@@ -388,11 +383,10 @@
         }
     }
 }
+//************************** INFO END **************************//
 
-//*** INFO SECTION *** END ***//
 
-
-//*** FOOTER SECTION *** START ***//
+//************************** FOOTER START **************************//
 //mobile
 @media screen and (max-width: 767px) {
     .footer-container {
@@ -461,5 +455,4 @@
         }
     }
 }
-
-//*** FOOTER SECTION *** END ***//
+//************************** FOOTER END **************************//
