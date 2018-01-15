@@ -1,16 +1,47 @@
 /************************** UNTOLD STORY **************************/
-
 .untold-container {
   .container {
-    display: flex;
-    position: relative;
-
-      .untold-left, .untold-right {
-        display: flex; flex: 1;
+    //title general
+    .title-container {
+      .title {
+        h2 {
+          text-transform: capitalize;
+          color: $light;
+          font: {
+            size: 24px;
+            weight: $untold-title-font-weight;
+          }
+        }
       }
+      .subtitle {
+        h3 {
+          text-transform: uppercase;
+          color: $light;
+          font: {
+            size: 14px;
+            weight: $untold-text-font-weight;
+          }
+        }
+      }
+    }
 
-      .untold-left {
-        background: linear-gradient(90deg, #E66587 0, #EB7D70 100%);
+    //TOP container on mobile
+    .untold-top {
+      display: flex; 
+      flex: 1;
+
+      .title-container { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    //LEFT container on desktop
+    .untold-left {
+      display: flex; 
+      flex: 1;
+      background: $untold-bg;
 
       .title-container { 
         display: flex;
@@ -18,77 +49,61 @@
         align-items: flex-start;
         justify-content: center;
         padding-left: 10px;
-
-        .title, .subtitle {
-          display: flex; flex: 1;
-          color: #fff;
-        }
-
-        .title {
-          align-items: flex-end;
-          text-align: center;
-          font: {
-            size: 24px;
-            weight: 500;
-          }
-        }
-
-        .subtitle {
-          font: {
-            size: 14px;
-            weight: 300;
-          }
-        }
       }
     }
 
+    //RIGHT container on desktop
     .untold-right {
-      background: url('../../images/story-bg.jpg');
+      display: flex; 
+      flex: 1;
+      background-image: url('../../images/story-bg.jpg');
       background-size: cover;
       background-position: center center;
     }
 
+    //MIDDLE container on desktop
     .untold-middle {
-      width: 500px; height: 300px;
-      background: #fff;
+      width: 500px; 
+      height: 300px;
+      background: $untold-middle-bg;
       position: absolute;
       top: 23%;
       border-radius: 3px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @extend .flex-center;
 
       .text-container {
-        width: 60%; height: 70%;
+        width: 60%; 
+        height: 70%;
         display: flex;
         flex-direction: column;
 
-        .title, .button {display: flex; flex: 1;}
-
         .title {
-          font: {
-            size: 14px; 
-            weight: 500;
+          display: flex; 
+          flex: 1;
+          h3 {
+            text-transform: uppercase;
+            font: {
+              size: $untold-middle-title-font-size; 
+              weight: $untold-title-font-weight;
+            }
           }
         }
         .description {
           display: flex;
           flex: 3;
-          color: #777;
-          font: {
-            size: 14px;
-            weight: 300;
+          color: $untold-text-color;
+          p {
+            font: {
+              size: $untold-middle-text-font-size;
+              weight: $untold-text-font-weight;
+            }
           }
         }
 
-        button {
-          background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+        .btn {
+          display: flex; 
+          flex: 1;
           border: none;
-          padding: 8px 25px;
-          border-radius: 20px;
-          color: #fff;
-          font-size: 14px;
-          transition: all .5s ease;
 
           &:hover {cursor: pointer;}
         }
@@ -96,5 +111,4 @@
     }
   }
 }
-
 /************************** /UNTOLD STORY **************************/
