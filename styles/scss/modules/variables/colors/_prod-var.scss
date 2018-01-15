@@ -1,10 +1,15 @@
-//header
-$header-bg: $_gradient-background;
-
-
 //general
 $dark: $_black;
 $light: $_white;
 
 //button
 $btn-bg: $_gradient-background;
+
+//header
+$header-bg: $_gradient-background;
+
+//features
+$features-bg: $light;
+$features-icon-color: $_mauvelous;
+$features-title-color: $_raisin-black;
+$features-text-color: $_sonic-silver;

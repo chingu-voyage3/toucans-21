@@ -2,66 +2,69 @@
 .features-container {
     .container {
       height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #fff;
+      background: $features-bg;
   
-      .feature-one, .feature-two, .feature-three {
-        display: flex; flex: 1;
+      .feature-one, 
+      .feature-two, 
+      .feature-three {
+        display: flex; 
+        flex: 1;
         height: 100%;
         padding: 0 20px;
       }
   
-      .icon, .text {
-        display: flex;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-      }
-  
-  
       i {
-        border: 1px solid #EEEEEE; //dont delete
-        width: 60px; height: 60px;
-        color: #EE98A8;
-        font-size: 23px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 1s ease;
+        @extend .flex-center;
+        width: 60px; 
+        height: 60px;
+        border: 1px solid $light; //dont delete
         border-radius: 3px;
+        font-size: $features-icon-font-size;
+        color: $features-icon-color;
+        transition: all 1s ease;
       }
   
       
-      .icon {
+      .icon { 
+        @extend .flex-center;
+        flex: 1;
         &:hover {
           i {
-            background: linear-gradient(130deg, #E66586 0, #F09459 100%);
+            background: $_gradient-background;
             border: none;
+            color: $light;
             cursor: pointer;
-            color: #fff;
           }
         }
       }
   
       .text {
-        flex-direction: column;
+        display: flex;
         flex: 2;
+        flex-direction: column;
         align-items: flex-start;
-  
-        .title, .description {
-          font-weight: 300;
-          font-size: 14px;
-        }
+        justify-content: flex-start;
   
         .title {
-          color: #222;
-          font-weight: 500;
-          margin: 15px 0;
+          h3 {
+            font-size: $features-title-font-size;
+            font-weight: $features-title-font-weight;
+            color: $features-title-color;
+            font-weight: $features-title-font-weight;
+            margin: 15px 0;
+            text-transform: uppercase;
+          }
         }
   
-        .description {color: #777;}
+        .description {
+          p {
+            color: $features-text-color;
+            font: {
+              size: $features-text-font-size;
+              weight: $features-text-font-weight;
+            }
+          }
+        }
       }
     }
   }
