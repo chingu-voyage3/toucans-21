@@ -1,0 +1,69 @@
+/************************** FEATURES **************************/
+.features-container {
+    .container {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+  
+      .address, .email, .phone {
+        display: flex; flex: 1;
+        height: 100%;
+        padding: 0 20px;
+      }
+  
+      .icon, .text {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+      }
+  
+  
+      i {
+        border: 1px solid #EEEEEE; //dont delete
+        width: 60px; height: 60px;
+        color: #EE98A8;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s ease;
+        border-radius: 3px;
+      }
+  
+      
+      .icon {
+        &:hover {
+          i {
+            background: linear-gradient(130deg, #E66586 0, #F09459 100%);
+            border: none;
+            cursor: pointer;
+            color: #fff;
+          }
+        }
+      }
+  
+      .text {
+        flex-direction: column;
+        flex: 2;
+        align-items: flex-start;
+  
+        .title, .description {
+          font-weight: 300;
+          font-size: 14px;
+        }
+  
+        .title {
+          color: #222;
+          font-weight: 500;
+          margin: 15px 0;
+        }
+  
+        .description {color: #777;}
+      }
+    }
+  }
+  
+  /************************** /FEATURES **************************/

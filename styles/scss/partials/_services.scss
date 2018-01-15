@@ -1,0 +1,164 @@
+/************************** SERVICES **************************/
+.services {
+    height: auto;
+    display: flex;
+    
+    .container {
+      background: linear-gradient(90deg, #E66586 0, #f09459 100%);
+      flex-direction: column;
+      padding: 50px 0;
+
+
+      .title-container { 
+        display: flex; flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .title, .subtitle {
+          display: flex; flex: 1;
+          color: #fff;
+        }
+
+        .title {
+          align-items: flex-end;
+          text-align: center;
+          font: {
+            size: 24px;
+            weight: 500;
+          }
+        }
+
+        .subtitle {
+          font: {
+            size: 14px;
+            weight: 300;
+          }
+        }
+      }
+
+
+      .services-container {
+        display: flex; flex: 4;
+        flex-direction: column;
+        padding-top: 5%;
+
+        .row1 {
+          display: flex;
+          flex-wrap: wrap;
+
+          .item {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 20px 15px;
+
+            .image {
+              background: #fff;
+              position: relative;
+              display: flex;
+              height: 150px;
+              background-size: cover!important;
+              background-position: center!important;
+
+              &:hover {
+                cursor: pointer;
+
+                .overlay {
+                  background-color: rgba(255,255,255,.7);
+
+                  button {opacity: 1;}
+                }
+              }
+
+              .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                transition: all .5s ease;
+                background-color: rgba(255,255,255,0);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                button {
+                  opacity: 0;
+                  background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+                  border: none;
+                  padding: 10px 20px;
+                  border-radius: 20px;
+                  color: #fff;
+                  font-size: 15px;
+                  transition: all .5s ease;
+
+                  &:hover {cursor: pointer;}
+                }
+              }
+
+
+              .button {
+                position: absolute;
+                width: 100px; height: 30px;
+                background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+                border-radius: 50px;
+                align-self: center;
+                left: 30%;
+                display: flex;
+                align-items: center; justify-content: center;
+                color: #fff; 
+                font-size: 12px;
+                font-weight: 300;
+                display: none;
+                transition: all .5s ease;
+
+                i { color: #fff; font-size: 12px; margin-left: 2px;}
+              }
+            }
+
+            .text {
+              flex-direction: column;
+              color: #fff;
+              display: flex;
+              flex: 1;
+              padding-top: 10px;
+
+              .title, .description {
+                display: flex; flex: 1;
+                align-items: center;
+                font-size: 14px;
+              }
+
+              .title {
+                font-weight: 500;
+                text-transform: uppercase;
+              }
+
+              .description {
+                flex: 3;
+                font-weight: 300;
+              }
+            }
+          }
+
+
+          //row1
+          .item1 .image {background: url('../../images/r1i1.jpg');}
+          .item2 .image {background: url('../../images/r1i2.jpg');}
+          .item3 .image {background: url('../../images/r1i3.jpg');}
+          .item4 .image {background: url('../../images/r1i4.jpg');}
+          //row2
+          .item5 .image{background: url('../../images/r2i1.jpg');}
+          .item6 .image {background: url('../../images/r2i2.jpg');}
+          .item7 .image {background: url('../../images/r2i3.jpg');}
+          .item8 .image {background: url('../../images/r2i4.jpg');}
+
+        }
+      }
+    }
+  }
+
+/************************** /SERVICES **************************/
