@@ -1,32 +1,33 @@
 /************************** HEADER **************************/
+//import colors
+@import '../modules/all';
+
 header {
-    border: 1px dashed rgba(0,0,0,0);
+    border: 1px dashed hsla(0, 0%, 0%, 0);//don't delete
   
     .container {
       height: 600px;
       margin-top: 100px;
-      background: linear-gradient(130deg, #E66586 0, #F09459 100%);
+      background: $header-bg;
       flex-direction: column;
   
-      nav, .header-content {
-        display: flex; flex: 1;
-        width: 100%; 
-      }
-  
       nav {
-        .logo, .items, .burger {
-          display: flex; flex: 1;
-        }
+        display: grid;
+        grid-template-columns: 2fr 130px 30px;
+        width: 100%;
   
         .logo {
-          flex: 2;
-          padding: 25px 0 0 30px;
+          display: grid;
+          grid-template-columns: 1fr;
+          padding: 20px;
+          
           img {
-            height: 30px;
+            max-width: 100%;
           }
         }
   
         .items {
+          display: flex;
           flex: 9;
           justify-content: flex-end;
           align-items: center;
@@ -39,9 +40,8 @@ header {
             padding-right: 35px;
 
             a {
-              text-decoration: none;
               text-transform: uppercase;
-              color: rgba(255,255,255,.8);
+              color: hsla(0, 0%, 100%, 0.8);
               transition: all .2s ease;
               font: {
                 size: 13px; 
@@ -49,7 +49,7 @@ header {
               }
 
               &:hover {
-                color: #fff;
+                color: $light;
               }
             }
           }
@@ -69,14 +69,14 @@ header {
   
         .burger {
           display: flex;
+          flex: 1;
           align-items: center;
           justify-content: flex-end;
-          padding-right: 15px;
-          opacity: 1;
+          padding-right: $xs-font-size;
   
           i {
-            font-size: 20px;
-            color: #fff;
+            font-size: $s-m-font-size;
+            color: $light;
   
             &:hover {cursor: pointer;}
           }
@@ -86,46 +86,47 @@ header {
       }
   
       .header-content {
+        display: flex;
         flex: 6;
+        width: 100%; 
   
         .text-container { 
-          display: flex; flex: 1;
+          display: flex; 
+          flex: 1;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          padding: 20px;
+          padding: $s-m-font-size;
   
           .title {
-            text-align: center;
-            color: #fff;
-            font: {
-              size: 36px;
-              weight: 500;
+            h1 {
+              text-align: center;
+              color: $light;
+              font: {
+                size: $header-title-font-size;
+                weight: $header-title-font-weight;
+              }
             }
           }
   
           .subtitle {
-            color: #fff;
-            font: {
-              size: 12px;
-              weight: 300;
+            h2 {
+              color: $light;
+              font: {
+                size: $header-subtitle-font-size;
+                weight: $header-subtitle-font-weight;
+              }
             }
           }
         }
   
-        button {
-          background: rgba(0,0,0,0);
-          border: 1px solid #fff;
-          padding: 10px 20px;
-          border-radius: 20px;
-          color: #fff;
-          font-size: 15px;
-          transition: all .2s ease;
+        .btn {
+          background: none;
   
           &:hover {
             cursor: pointer;
-            border: 1px solid rgba(0,0,0,0);
-            background: linear-gradient(90deg, #E66586 0, #F09459 100%);
+            border: 1px solid hsla(0, 0%, 100%, 0);
+            background: $btn-bg;
           }
         }
       }

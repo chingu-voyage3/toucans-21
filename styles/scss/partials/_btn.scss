@@ -1,0 +1,11 @@
+//import colors
+@import '../modules/all';
+
+.btn {
+    border: 1px solid $light;
+    padding: 10px 20px;
+    border-radius: $s-m-font-size;
+    color: $light;
+    font-size: $btn-font-size;
+    transition: all .2s ease;
+}
