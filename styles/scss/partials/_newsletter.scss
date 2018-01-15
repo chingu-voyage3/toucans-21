@@ -2,40 +2,39 @@
 .newsletter-container {
     .container {
       height: 337px;
-      background: #fff;
-      display: flex;
+      background: $newsletter-bg;
       flex-direction: column;
   
       .text-container{
-        display: flex; flex: 1;
+        @extend .flex-center;
+        flex: 1;
         width: 100%;
-        align-items: center;
-        justify-content: center;
       }
   
-  
       .text-container { 
-        display: flex;
+        @extend .flex-center;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         padding-left: 10px;
   
         .title {
           align-items: flex-end;
           text-align: center;
-          color: #222;
-          font: {
-            size: 24px;
-            weight: 500;
+          color: $newsletter-title-color;
+          h2 {
+            font: {
+              size: $newsletter-title-font-size;
+              weight: $newsletter-title-font-weight;
+            }
           }
         }
   
         .subtitle {
-          color: #777;
-          font: {
-            size: 14px;
-            weight: 300;
+          color: $newsletter-text-color;
+          h3 {
+            font: {
+              size: $newsletter-text-font-size;
+              weight: $newsletter-text-font-weight;
+            }
           }
         }
       }
@@ -45,30 +44,21 @@
   
         input[type="text"] {
           width: 500px; height: 50px;
-          background: #F9F9FF;
+          background: $newsletter-input-bg;
           border: none;
           border-radius: 50px;
           font-family: 'Poppins', sans-serif;
-          color: rgb(116, 116, 116);
-          font-size: 15px;
-          font-weight: 300;
-          padding: 8px 0;
+          color: $newsletter-text-color;
+          font-size: $newsletter-input-font-size;
+          font-weight: $newsletter-input-font-weight;
           padding: 0 150px 0 8px;
         }
   
-        button {
+        .btn {
           margin-left: -143px;
-  
-          background: linear-gradient(90deg, #E66586 0, #F09459 100%);
           border: none;
-          padding: 14px 25px;
-          border-radius: 20px;
-          color: #fff;
-          font-size: 14px;
-          transition: all .5s ease;
   
           &:hover {cursor: pointer;}
-  
         }
       }
     }

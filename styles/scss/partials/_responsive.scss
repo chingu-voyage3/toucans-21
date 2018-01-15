@@ -212,8 +212,7 @@
 /*** /UNTOLD STORY ***/
 
 
-//*** NEWSLETTER SECTION *** START ***//
-//mobile
+/*** NEWSLETTER ***/
 @media screen and (max-width: 767px) {
     .newsletter-container {
         .container {
@@ -229,43 +228,15 @@
                         margin-bottom: 10px;
                         width: 100%;
                     }
-                    button {
+                    .btn {
                         margin: auto;
-                        padding: 9px 35px;
                     }
                 }
             }
         }
     }
 } 
-
-//tablet
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .newsletter-container {
-        .container {
-            .text-container {
-                padding: 0;
-                .input-container {
-                    width: 80%;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    input[type="text"] {
-                        width: 100%;
-                        padding: 8px 10px;
-                        margin-bottom: 10px;
-                    }
-                    button {
-                        margin: auto;
-                        padding: 9px 35px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-//*** NEWSLETTER SECTION *** END ***//
+/*** NEWSLETTER ***/
 
 
 //*** INFO SECTION *** START ***//
@@ -294,7 +265,7 @@
 } 
 
 //tablet
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
     .info-container {
         .container {
             padding: 80px 20px;
