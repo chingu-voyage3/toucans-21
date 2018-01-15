@@ -239,13 +239,12 @@
 /*** NEWSLETTER ***/
 
 
-//*** INFO SECTION *** START ***//
-//mobile
+/*** INFO ***/
 @media screen and (max-width: 767px) {
     .info-container {
         .container {
             flex-direction: column;
-            height: auto!important;
+
             .address,
             .email,
             .phone {
@@ -263,13 +262,11 @@
         }
     }
 } 
-
-//tablet
 @media screen and (min-width: 768px) {
     .info-container {
         .container {
             padding: 80px 20px;
-            height: auto;
+
             .address,
             .email,
             .phone {
@@ -279,8 +276,7 @@
         }
     }
 }
-
-//*** INFO SECTION *** END ***//
+/*** INFO  ***/
 
 
 //*** FOOTER SECTION *** START ***//

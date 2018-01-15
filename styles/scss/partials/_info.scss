@@ -1,65 +1,66 @@
 /************************** INFO **************************/
-
 .info-container {
-
     .container {
-      height: 340px;
-      display: flex;
+      height: auto;
   
       .address, .email, .phone {
-        display: flex; flex: 1;
-        height: 100%;
-      }
-  
-      .icon, .text {
-        display: flex;
+        display: flex; 
         flex: 1;
-        align-items: center;
-        justify-content: center;
-      }
-  
-  
-      i {
-        border: 1px solid #fff; //dont delete
-        width: 60px; height: 60px;
-        color: #fff;
-        font-size: 23px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 1s ease;
-        border-radius: 3px;
-      }
-  
+        height: 100%;
       
-      .icon {
-        &:hover {
+        .icon {
+          @extend .flex-center;
+          flex: 1;
+          
           i {
-            background: linear-gradient(130deg, #E66586 0, #F09459 100%);
-            border: none;
-            cursor: pointer;
+            border: 1px solid $light; //dont delete
+            width: 60px; 
+            height: 60px;
+            color: $light;
+            font-size: $info-icon-font-size;
+            @extend .flex-center;
+            transition: all 1s ease;
+            border-radius: 3px;
+          }
+      
+          &:hover {
+            i {
+              background: $info-icon-bg;
+              border: none;
+              cursor: pointer;
+            }
           }
         }
-      }
-  
-      .text {
-        flex-direction: column;
-        flex: 2;
-        color: #fff;
-        align-items: flex-start;
-  
-        .title, .description {
-          font-weight: 300;
-          font-size: 14px;
-        }
-  
-        .title {
-          font-weight: 500;
-          margin: 15px 0;
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          flex: 2;
+          color: $info-text-color;
+    
+          .title {
+            margin: 15px 0;
+
+            h3 {
+              font: {
+                size: $info-title-font-size;
+                weight: $info-title-font-weight;
+              }
+            }
+          }
+          
+          .description {
+            p {
+              font: {
+                size: $info-text-font-size;
+                weight: $info-text-font-weight;
+              }
+            }
+          }
         }
       }
     }
   }
-  
-  
+
   /************************** /INFO **************************/
