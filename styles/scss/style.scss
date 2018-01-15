@@ -15,7 +15,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-  background: url('../images/body-bg.jpg');
+  background: url('../../images/body-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
   box-shadow: inset 0 0 0 2000px rgba(230, 101, 134, 0.5);
@@ -43,7 +43,7 @@ body {
 //************************** GENERAL END **************************//
 
 //************************** DIANA HEADER SECTION START **************************//
-.header-container {
+header {
   border: 1px dashed rgba(0,0,0,0);
 
   .container {
@@ -400,15 +400,15 @@ body {
 
 
           //row1
-          .item1 .image {background: url('../images/r1i1.jpg');}
-          .item2 .image {background: url('../images/r1i2.jpg');}
-          .item3 .image {background: url('../images/r1i3.jpg');}
-          .item4 .image {background: url('../images/r1i4.jpg');}
+          .item1 .image {background: url('../../images/r1i1.jpg');}
+          .item2 .image {background: url('../../images/r1i2.jpg');}
+          .item3 .image {background: url('../../images/r1i3.jpg');}
+          .item4 .image {background: url('../../images/r1i4.jpg');}
           //row2
-          .item5 .image{background: url('../images/r2i1.jpg');}
-          .item6 .image {background: url('../images/r2i2.jpg');}
-          .item7 .image {background: url('../images/r2i3.jpg');}
-          .item8 .image {background: url('../images/r2i4.jpg');}
+          .item5 .image{background: url('../../images/r2i1.jpg');}
+          .item6 .image {background: url('../../images/r2i2.jpg');}
+          .item7 .image {background: url('../../images/r2i3.jpg');}
+          .item8 .image {background: url('../../images/r2i4.jpg');}
 
         }
       }
@@ -470,7 +470,7 @@ body {
     }
 
     .untold-right {
-      background: url('../images/story-bg.jpg');
+      background: url('../../images/story-bg.jpg');
       background-size: cover;
       background-position: center center;
     }
@@ -693,7 +693,7 @@ body {
 
       .logo {
         flex: 2;
-        background: url('/images/logo.png');
+        background: url('../../images/logo.png');
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -744,3 +744,4 @@ body {
 
 //************************** DIANA FOOTER SECTION END **************************//
 
+@import 'responsive';
