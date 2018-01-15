@@ -8,12 +8,12 @@ header {
       background: linear-gradient(130deg, #E66586 0, #F09459 100%);
       flex-direction: column;
   
-      .nav-container, .text-container {
+      nav, .header-content {
         display: flex; flex: 1;
         width: 100%; 
       }
   
-      .nav-container {
+      nav {
         .logo, .items, .burger {
           display: flex; flex: 1;
         }
@@ -33,27 +33,23 @@ header {
           transform-origin: right;
           transform: scale(0);
           animation: animateItems .3s forwards;
-          
-          ul {
-            list-style: none;
-  
-            li {
-              float: left;
-              padding-right: 35px;
-  
-              a {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: rgba(255,255,255,.8);
-                transition: all .2s ease;
-                font: {
-                  size: 13px; 
-                  weight: 300;
-                }
-  
-                &:hover {
-                  color: #fff;
-                }
+
+          li {
+            float: left;
+            padding-right: 35px;
+
+            a {
+              text-decoration: none;
+              text-transform: uppercase;
+              color: rgba(255,255,255,.8);
+              transition: all .2s ease;
+              font: {
+                size: 13px; 
+                weight: 300;
+              }
+
+              &:hover {
+                color: #fff;
               }
             }
           }
@@ -89,10 +85,10 @@ header {
         }
       }
   
-      .text-container {
+      .header-content {
         flex: 6;
   
-        .title-container { 
+        .text-container { 
           display: flex; flex: 1;
           flex-direction: column;
           align-items: center;
