@@ -2,6 +2,7 @@
 @import '../modules/all';
 
 .btn {
+    background: $btn-bg;
     border: 1px solid $light;
     padding: 10px 20px;
     border-radius: $s-m-font-size;

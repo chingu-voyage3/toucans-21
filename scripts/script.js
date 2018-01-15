@@ -1,4 +1,3 @@
-//DIANA - SERVICES START
 $(document).ready(function() {
     $(".image").on("mouseenter", function() {
         $(".button").addClass("showBtn");
@@ -17,4 +16,3 @@ $(document).ready(function() {
         $(".items").toggleClass("animateItems");
     });
 });
-//DIANA - SERVICES END   
