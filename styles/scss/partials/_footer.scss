@@ -13,35 +13,46 @@
       }
   
       .nav-container {
-        .logo, .copyright, .social {display: flex; flex: 1;}
-  
         .logo {
+          display: flex;
           flex: 2;
-          background: url('../../images/logo.png');
+          background-image: url('../../images/logo.png');
           background-repeat: no-repeat;
           background-position: center;
         }
   
         .copyright {
-          flex: 8;
+          display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: flex-start;
+          flex: 8;
+          flex-direction: column;
           transform-origin: right;
-          color: #fff;
+          color: $light;
+          padding-top: 10px;
+
           font: {
             size: 14px;
             weight: 300;
           }
   
-          .special, i {
-            color: #e66686;
+          .special, i, a {
+            color: $footer-special;
             margin: 0 5px;
           }
   
           .special:hover {cursor: pointer;}
+
+          .second-row {
+            margin-top: -30px;
+            margin-bottom: 5px;
+          }
         }
         
         .social {
+          display: flex; 
+          flex: 1;
+
           .facebook, .twitter, .medium, .gplus {
             i {
               color: rgba(255,255,255,.8);
@@ -49,15 +60,13 @@
               font-size: 13px;
               border: 1px solid rgba(255,255,255,.4);
               width: 30px; height: 30px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              @extend .flex-center;
               transition: all .3s ease;
   
               &:hover {
                 cursor: pointer;
                 border: none;
-                background: linear-gradient(90deg, #E66586 0, #f09459 100%);
+                background: $_gradient-background;
               }
             }
           }
@@ -65,5 +74,4 @@
       }
     }
   }
-  
   /************************** /FOOTER **************************/
