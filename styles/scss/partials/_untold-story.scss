@@ -1,0 +1,114 @@
+/************************** UNTOLD STORY **************************/
+.untold-container {
+  .container {
+    //title general
+    .title-container {
+      .title {
+        h2 {
+          text-transform: capitalize;
+          color: $light;
+          font: {
+            size: 24px;
+            weight: $untold-title-font-weight;
+          }
+        }
+      }
+      .subtitle {
+        h3 {
+          text-transform: uppercase;
+          color: $light;
+          font: {
+            size: 14px;
+            weight: $untold-text-font-weight;
+          }
+        }
+      }
+    }
+
+    //TOP container on mobile
+    .untold-top {
+      display: flex; 
+      flex: 1;
+
+      .title-container { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    //LEFT container on desktop
+    .untold-left {
+      display: flex; 
+      flex: 1;
+      background: $untold-bg;
+
+      .title-container { 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 10px;
+      }
+    }
+
+    //RIGHT container on desktop
+    .untold-right {
+      display: flex; 
+      flex: 1;
+      background-image: url('../../images/story-bg.jpg');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    //MIDDLE container on desktop
+    .untold-middle {
+      width: 500px; 
+      height: 300px;
+      background: $untold-middle-bg;
+      position: absolute;
+      top: 23%;
+      border-radius: 3px;
+      @extend .flex-center;
+
+      .text-container {
+        width: 60%; 
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          display: flex; 
+          flex: 1;
+          h3 {
+            text-transform: uppercase;
+            font: {
+              size: $untold-middle-title-font-size; 
+              weight: $untold-title-font-weight;
+            }
+          }
+        }
+        .description {
+          display: flex;
+          flex: 3;
+          color: $untold-text-color;
+          p {
+            font: {
+              size: $untold-middle-text-font-size;
+              weight: $untold-text-font-weight;
+            }
+          }
+        }
+
+        .btn {
+          display: flex; 
+          flex: 1;
+          border: none;
+
+          &:hover {cursor: pointer;}
+        }
+      }
+    }
+  }
+}
+/************************** /UNTOLD STORY **************************/
