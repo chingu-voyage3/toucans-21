@@ -1,0 +1,141 @@
+/************************** SERVICES **************************/
+.services {
+    height: auto;
+    display: flex;
+    
+    .container {
+      background: $services-bg;
+      flex-direction: column;
+      padding: 50px 0;
+
+
+      .title-container { 
+        @extend .flex-center;
+        flex: 1;
+        flex-direction: column;
+
+        .title, .subtitle {
+          display: flex; 
+          flex: 1;
+          color: $light;
+        }
+
+        .title {
+          h2 {
+            align-items: flex-end;
+            text-align: center;
+            font: {
+              size: $services-title-font-size;
+              weight: $services-title-font-weight;
+            }
+          }
+        }
+
+        .subtitle {
+          h3 {
+            font: {
+              size: $services-text-font-size;
+              weight: $services-text-font-weight;
+            }
+          }
+        }
+      }
+
+
+      .services-container {
+        display: flex; 
+        flex: 4;
+        flex-direction: column;
+        padding-top: 5%;
+
+        .row1 {
+          display: flex;
+          flex-wrap: wrap;
+
+          .item {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 20px 15px;
+
+            .image {
+              position: relative;
+              display: flex;
+              height: 150px;
+              background-color: $light;
+              background-size: cover;
+              background-position: center;
+              
+              &:hover {
+                cursor: pointer;
+
+                .overlay {
+                  background-color: rgba(255,255,255,.7);
+
+                  .btn {opacity: 1;}
+                }
+              }
+
+              .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                transition: all .5s ease;
+                @extend .flex-center;
+
+                .btn {
+                  opacity: 0;
+                  border: none;
+
+                  &:hover {cursor: pointer;}
+                }
+
+              }
+            }
+
+            .text {
+              display: flex;
+              flex: 1;
+              flex-direction: column;
+              color: $light;
+              padding-top: 10px;
+
+              .title {
+                h4 {
+                  font-size: $services-item-title-font-size;
+                  font-weight: $services-item-title-font-weight;
+                  text-transform: uppercase;
+                }
+              }
+
+              .description {
+                p {
+                  font-size: $services-item-text-font-size;
+                  font-weight: $services-item-text-font-weight;
+                }
+              }
+            }
+          }
+
+
+          //row1
+          .item1 .image {background-image: url('../../images/r1i1.jpg');}
+          .item2 .image {background-image: url('../../images/r1i2.jpg');}
+          .item3 .image {background-image: url('../../images/r1i3.jpg');}
+          .item4 .image {background-image: url('../../images/r1i4.jpg');}
+          //row2
+          .item5 .image{background-image: url('../../images/r2i1.jpg');}
+          .item6 .image {background-image: url('../../images/r2i2.jpg');}
+          .item7 .image {background-image: url('../../images/r2i3.jpg');}
+          .item8 .image {background-image: url('../../images/r2i4.jpg');}
+
+        }
+      }
+    }
+  }
+
+/************************** /SERVICES **************************/

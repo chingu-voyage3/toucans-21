@@ -1,0 +1,72 @@
+/************************** FEATURES **************************/
+.features-container {
+    .container {
+      height: 300px;
+      background: $features-bg;
+  
+      .feature-one, 
+      .feature-two, 
+      .feature-three {
+        display: flex; 
+        flex: 1;
+        height: 100%;
+        padding: 0 20px;
+      }
+  
+      i {
+        @extend .flex-center;
+        width: 60px; 
+        height: 60px;
+        border: 1px solid $light; //dont delete
+        border-radius: 3px;
+        font-size: $features-icon-font-size;
+        color: $features-icon-color;
+        transition: all 1s ease;
+      }
+  
+      
+      .icon { 
+        @extend .flex-center;
+        flex: 1;
+        &:hover {
+          i {
+            background: $_gradient-background;
+            border: none;
+            color: $light;
+            cursor: pointer;
+          }
+        }
+      }
+  
+      .text {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+  
+        .title {
+          h3 {
+            font-size: $features-title-font-size;
+            font-weight: $features-title-font-weight;
+            color: $features-title-color;
+            font-weight: $features-title-font-weight;
+            margin: 15px 0;
+            text-transform: uppercase;
+          }
+        }
+  
+        .description {
+          p {
+            color: $features-text-color;
+            font: {
+              size: $features-text-font-size;
+              weight: $features-text-font-weight;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  /************************** /FEATURES **************************/
